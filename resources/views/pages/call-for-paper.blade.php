@@ -37,7 +37,7 @@
                 
                 <p class="text-xs text-gray-800 dark:text-gray-300 font-bold leading-relaxed">Format your manuscript using our official sample before submission to ensure acceptance.</p>
                 
-                <a href="#" class="flex items-center justify-center gap-3 px-6 py-4 bg-accent-yellow text-primary-blue rounded-xl font-black uppercase tracking-widest text-[10px] transition-all hover:scale-[1.02] hover:shadow-xl shadow-yellow-500/20 active:scale-95 border-b-4 border-yellow-600">
+                <a href="{{ asset('JIEEE Paper Template.docx') }}" class="flex items-center justify-center gap-3 px-6 py-4 bg-accent-yellow text-primary-blue rounded-xl font-black uppercase tracking-widest text-[10px] transition-all hover:scale-[1.02] hover:shadow-xl shadow-yellow-500/20 active:scale-95 border-b-4 border-yellow-600">
                     Download Paper Sample
                 </a>
             </div>

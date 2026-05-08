@@ -67,7 +67,7 @@
                         <p class="text-xs">Title | Author Details | Abstract | Keywords | Introduction | Literature Review | Methodology | Results & Discussion | Conclusion | References</p>
                     </div>
 
-                    <a href="#" class="flex items-center justify-center gap-3 px-6 py-4 bg-slate-50 dark:bg-slate-800 text-primary-blue dark:text-white rounded-2xl font-black uppercase tracking-widest text-[10px] border border-gray-100 dark:border-slate-700 transition-all hover:bg-white dark:hover:bg-slate-700 hover:shadow-lg group">
+                    <a href="{{ asset('JIEEE Paper Template.docx') }}" class="flex items-center justify-center gap-3 px-6 py-4 bg-slate-50 dark:bg-slate-800 text-primary-blue dark:text-white rounded-2xl font-black uppercase tracking-widest text-[10px] border border-gray-100 dark:border-slate-700 transition-all hover:bg-white dark:hover:bg-slate-700 hover:shadow-lg group">
                         <svg class="w-4 h-4 text-blue-600 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                         Download Sample Manuscript
                     </a>
