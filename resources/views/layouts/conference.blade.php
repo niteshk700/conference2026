@@ -21,7 +21,7 @@
         <div class="inline-block animate-marquee font-bold text-[10px] md:text-xs uppercase tracking-[0.2em] px-4">
             @foreach($marquees as $mq)
                 @if($mq->url)
-                    <a href="{{ $mq->url }}" target="_blank" class="hover:text-accent-yellow transition-colors duration-300">
+                    <a href="{{ $mq->url }}" {!! str_starts_with($mq->url, 'http') ? 'target="_blank"' : '' !!} class="hover:text-accent-yellow transition-colors duration-300">
                         {{ $mq->text }}
                     </a>
                 @else
@@ -34,7 +34,7 @@
             <!-- Repeat for seamless loop -->
             @foreach($marquees as $mq)
                 @if($mq->url)
-                    <a href="{{ $mq->url }}" target="_blank" class="hover:text-accent-yellow transition-colors duration-300">
+                    <a href="{{ $mq->url }}" {!! str_starts_with($mq->url, 'http') ? 'target="_blank"' : '' !!} class="hover:text-accent-yellow transition-colors duration-300">
                         {{ $mq->text }}
                     </a>
                 @else

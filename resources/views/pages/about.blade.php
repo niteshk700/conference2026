@@ -3,56 +3,77 @@
 @section('title', 'About | ICETA-2026')
 
 @section('content')
-<!-- Page Title -->
+<!-- Page Header -->
 <section class="bg-primary-blue dark:bg-black py-20 text-center relative overflow-hidden transition-colors duration-300">
-    <img src="{{ asset('assets/images/hero-bg.jpg') }}" alt="Background" class="absolute inset-0 w-full h-full object-cover opacity-10 dark:opacity-5">
     <div class="relative z-10">
-        <h1 class="text-4xl md:text-5xl font-black text-white uppercase tracking-tight mb-4">About ICETA-2026</h1>
-        <p class="text-accent-yellow font-bold uppercase tracking-widest text-sm">NITRA Technical Campus, Ghaziabad</p>
+        <h1 class="text-4xl md:text-5xl font-black text-white uppercase tracking-tight mb-2">About the Conference</h1>
+        <p class="text-accent-yellow font-bold uppercase tracking-widest text-sm">Vision, Mission & Host Institution</p>
     </div>
 </section>
 
-<!-- Page Content -->
-<section class="py-24 px-8">
-    <div class="max-w-5xl mx-auto prose dark:prose-invert prose-blue max-w-none">
-        @if($page && $page->content)
-            {!! $page->content !!}
-        @else
-            <!-- Fallback if no content in DB -->
-            <div class="flex flex-col md:flex-row gap-16 items-center">
-                <div class="flex-1 space-y-8">
-                    <div class="inline-block px-4 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-bold text-xs uppercase tracking-widest rounded-full">Vision & Scope</div>
-                    <h2 class="text-3xl md:text-4xl font-black text-primary-blue dark:text-white leading-tight">Advancing Research in <br><span class="text-blue-600 dark:text-blue-400">Emerging Technologies</span></h2>
-                    <div class="w-16 h-1 bg-accent-yellow"></div>
-                    <div class="space-y-6 text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-                        <p>The International Conference on Emerging Technologies and its Applications (ICETA-2026) aims to bring together academicians, researchers, industry experts, and innovators to exchange knowledge and insights on the latest advancements in emerging technologies.</p>
-                        <p>The conference focuses on areas such as Artificial Intelligence, IoT, Robotics, Cybersecurity, Cloud Computing, and Data Analytics, highlighting their applications in solving real-world challenges.</p>
-                    </div>
-                </div>
-                <div class="flex-1">
-                    <div class="relative">
-                        <div class="absolute -inset-4 bg-accent-yellow/10 rounded-2xl -rotate-3"></div>
-                        <div class="relative bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-2xl dark:shadow-none border border-gray-100 dark:border-slate-700">
-                            <p class="text-gray-600 dark:text-gray-300 italic leading-relaxed">"It provides a multidisciplinary platform for discussing innovations, trends, and practical implementations across sectors like healthcare, agriculture, smart cities, and sustainability."</p>
-                        </div>
-                    </div>
-                </div>
+<!-- Content Sections -->
+<div class="max-w-7xl mx-auto px-8 py-24 space-y-32">
+    
+    <!-- About ICETA-2026 -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="space-y-8">
+            <div class="inline-block px-4 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-black text-[10px] uppercase tracking-widest rounded-full">Conference Overview</div>
+            <h2 class="text-3xl md:text-4xl font-black text-primary-blue dark:text-white leading-tight uppercase tracking-tighter">ICETA-2026</h2>
+            <div class="space-y-6 text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+                <p>The International Conference on Emerging Technologies and its Applications (ICETA-2026) aims to bring together academicians, researchers, industry experts, and innovators to exchange knowledge and insights on the latest advancements in emerging technologies.</p>
+                <p>The conference focuses on areas such as Artificial Intelligence, IoT, Robotics, Cybersecurity, Cloud Computing, and Data Analytics, highlighting their applications in solving real-world challenges.</p>
+                <p>It provides a multidisciplinary platform for discussing innovations, trends, and practical implementations across sectors like Textile, healthcare, agriculture, smart cities, and sustainability. ICETA-2026 encourages collaboration, research excellence, and the development of innovative, technology-driven solutions for a sustainable and digitally empowered future.</p>
             </div>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-900 p-12 rounded-[3rem] border border-gray-100 dark:border-slate-800">
+            <h3 class="text-xl font-bold text-primary-blue dark:text-accent-yellow mb-6 uppercase tracking-widest">Our Objectives</h3>
+            <ul class="space-y-6">
+                <li class="flex gap-4">
+                    <span class="text-blue-600 font-black">01.</span>
+                    <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Promote advanced research in Emerging Technologies like AI, IoT, Textile, Robotics, and Data Analytics.</p>
+                </li>
+                <li class="flex gap-4">
+                    <span class="text-blue-600 font-black">02.</span>
+                    <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Encourage interdisciplinary collaboration among academia, industry, and policymakers.</p>
+                </li>
+                <li class="flex gap-4">
+                    <span class="text-blue-600 font-black">03.</span>
+                    <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Address real-world challenges in sectors such as healthcare, agriculture, and smart cities.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-            <div class="mt-24 text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-black text-primary-blue dark:text-white mb-4 uppercase tracking-tight transition-colors duration-300">About the Institute</h2>
-                <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
+    <!-- About NITRA Technical Campus -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1 bg-primary-blue text-white p-12 rounded-[3rem] shadow-2xl shadow-blue-900/40">
+            <h3 class="text-xl font-bold text-accent-yellow mb-6 uppercase tracking-widest">Institutional Heritage</h3>
+            <div class="space-y-6 text-sm md:text-base leading-relaxed text-blue-100">
+                <p>NITRA Technical Campus (NTC), Ghaziabad, is the academic arm of the Northern India Textile Research Association (NITRA), a premier institute established in 1974 by the Government of India and the textile industry.</p>
+                <p>NTC is approved by the AICTE and is affiliated with Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow.</p>
+                <p>The campus promotes interdisciplinary learning, skill development, and real-world exposure, aiming to nurture competent professionals with strong ethical values and a commitment to technological advancement.</p>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-                <div class="space-y-6">
-                    <p>NITRA Technical Campus, Ghaziabad, established in 2012, is a premier institution committed to excellence in technical education and research. Affiliated with reputed bodies and certified under ISO 9001:2015, the institute offers quality programs in engineering and technology with a strong focus on innovation and industry relevance.</p>
+        </div>
+        <div class="order-1 lg:order-2 space-y-8">
+            <div class="inline-block px-4 py-1 bg-accent-yellow/10 text-blue-700 dark:text-accent-yellow font-black text-[10px] uppercase tracking-widest rounded-full">Host Institution</div>
+            <h2 class="text-3xl md:text-4xl font-black text-primary-blue dark:text-white leading-tight uppercase tracking-tighter">NITRA <span class="text-blue-600 italic">Technical Campus</span></h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">A center of excellence in technical education and research, supported by experienced faculty and modern infrastructure.</p>
+            <div class="pt-8 border-t border-gray-100 dark:border-slate-800 flex gap-12">
+                <div>
+                    <p class="text-2xl font-black text-primary-blue dark:text-white">1974</p>
+                    <p class="text-[10px] font-black uppercase tracking-widest text-gray-400">Established</p>
                 </div>
-                <div class="space-y-6">
-                    <p>It provides a dynamic learning environment supported by experienced faculty, modern infrastructure, and research-driven practices. The campus actively promotes interdisciplinary collaboration, skill development, and practical exposure to real-world challenges.</p>
+                <div>
+                    <p class="text-2xl font-black text-primary-blue dark:text-white">AKTU</p>
+                    <p class="text-[10px] font-black uppercase tracking-widest text-gray-400">Affiliation</p>
+                </div>
+                <div>
+                    <p class="text-2xl font-black text-primary-blue dark:text-white">802</p>
+                    <p class="text-[10px] font-black uppercase tracking-widest text-gray-400">College Code</p>
                 </div>
             </div>
-        @endif
-    </div>
-</section>
+        </div>
+    </section>
+
+</div>
 @endsection

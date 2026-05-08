@@ -3,66 +3,99 @@
 @section('title', 'Committee | ICETA-2026')
 
 @section('content')
-<!-- Page Title -->
-<section class="bg-primary-blue dark:bg-black py-20 text-center transition-colors duration-300 relative overflow-hidden">
-    <div class="absolute inset-0 opacity-10">
-        <img src="{{ asset('assets/images/hero-bg.jpg') }}" alt="Background" class="w-full h-full object-cover">
-    </div>
-    <div class="relative z-10 px-4">
-        <p class="text-white/70 font-bold uppercase tracking-[0.3em] text-[10px] md:text-xs mb-4">NITRA TECHNICAL CAMPUS (802), GHAZIABAD</p>
-        <h1 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tight mb-4 leading-tight">International Conference on <br class="hidden md:block"> Emerging Technologies and its Applications <br class="hidden md:block"> <span class="text-accent-yellow">(ICETA-2026)</span></h1>
-        <div class="inline-block px-6 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
-            <p class="text-white font-black uppercase tracking-widest text-xs md:text-sm">17th – 18th July 2026</p>
-        </div>
-        <div class="mt-8 flex justify-center items-center gap-4">
-            <div class="w-12 h-0.5 bg-accent-yellow"></div>
-            <h2 class="text-accent-yellow font-black uppercase tracking-[0.4em] text-sm md:text-base">Organizing Committees</h2>
-            <div class="w-12 h-0.5 bg-accent-yellow"></div>
-        </div>
+<!-- Minimalist Header -->
+<section class="py-24 md:py-32 px-12 text-center bg-white dark:bg-slate-900 transition-colors duration-300">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-black text-primary-blue dark:text-white uppercase tracking-tighter mb-6">Conference Committees</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm md:text-base font-bold uppercase tracking-[0.4em]">ICETA-2026 Academic Organization</p>
+        <div class="w-16 h-1.5 bg-accent-yellow mx-auto mt-10 rounded-full"></div>
     </div>
 </section>
 
-<!-- Committee Dynamic Sections -->
-@foreach($committees as $category => $members)
-<section class="py-24 px-8 relative overflow-hidden {{ $loop->even ? 'bg-slate-50 dark:bg-slate-900/40' : 'bg-white dark:bg-slate-900' }} transition-colors duration-300">
-    <!-- Decorative Background Element -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-px bg-gradient-to-r from-transparent via-gray-200 dark:via-slate-700 to-transparent"></div>
-    
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-black text-primary-blue dark:text-white uppercase tracking-tighter mb-4 transition-colors duration-300">{{ $category }}</h2>
-            <div class="flex justify-center items-center gap-4">
-                <div class="w-12 h-0.5 bg-accent-yellow/30"></div>
-                <div class="w-4 h-4 rotate-45 border-2 border-accent-yellow"></div>
-                <div class="w-12 h-0.5 bg-accent-yellow/30"></div>
-            </div>
-        </div>
+<div class="max-w-[1500px] mx-auto px-6 md:px-12 pb-24">
+    <div class="flex flex-col lg:flex-row gap-12 xl:gap-20">
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            @foreach($members as $member)
-            <div class="bg-white dark:bg-slate-800/50 p-8 rounded-[2rem] shadow-2xl shadow-blue-900/5 dark:shadow-none text-center border border-gray-100 dark:border-slate-700/50 transition-all hover:-translate-y-2 hover:border-accent-yellow/50 group">
-                <div class="mb-4">
-                    <span class="text-accent-yellow/20 text-4xl font-black italic">{{ sprintf('%02d', $loop->iteration) }}</span>
+        <!-- Minimalist Sidebar Index -->
+        <aside class="hidden lg:block lg:w-1/4 xl:w-1/5">
+            <div class="sticky top-32">
+                <div class="bg-slate-50/50 dark:bg-slate-800/30 backdrop-blur-md p-8 rounded-[2rem] border border-gray-100 dark:border-slate-800">
+                    <h3 class="text-primary-blue dark:text-white font-black uppercase tracking-widest text-[10px] mb-8 flex items-center gap-2">
+                        <span class="w-2 h-2 bg-accent-yellow rounded-full"></span>
+                        Index
+                    </h3>
+                    <nav class="space-y-4 max-h-[60vh] overflow-y-auto custom-scrollbar pr-4">
+                        @foreach($committees as $category => $members)
+                            <a href="#{{ str($category)->slug() }}" class="block group">
+                                <p class="text-[10px] font-black uppercase tracking-widest text-gray-400 group-hover:text-primary-blue dark:group-hover:text-accent-yellow transition-all">{{ $category }}</p>
+                                <div class="h-0.5 w-0 group-hover:w-full bg-accent-yellow mt-1 transition-all duration-300"></div>
+                            </a>
+                        @endforeach
+                    </nav>
                 </div>
-                <h3 class="text-xl font-bold text-primary-blue dark:text-white mb-2 transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-accent-yellow">{{ $member->name }}</h3>
-                @if($member->role)
-                <p class="text-blue-600 dark:text-blue-400 font-extrabold text-[10px] uppercase tracking-[0.2em] mb-3">{{ $member->role }}</p>
-                @endif
-                @if($member->affiliation)
-                <div class="pt-4 border-t border-gray-100 dark:border-slate-700/50">
-                    <p class="text-gray-500 dark:text-gray-400 text-xs font-medium leading-relaxed">{{ $member->affiliation }}</p>
-                </div>
-                @endif
             </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-@endforeach
+        </aside>
 
-<!-- Organizing Committee (Dark Section for contrast if preferred, but dynamic now) -->
-<section class="py-24 bg-primary-blue dark:bg-black text-white px-8 transition-colors duration-300 text-center">
-    <p class="text-slate-400 uppercase font-bold tracking-[0.3em] text-xs">Collaborative Excellence</p>
-    <h2 class="text-3xl font-black uppercase tracking-tight mt-2">ICETA Global Network</h2>
-</section>
+        <!-- Card-Based Directory Content -->
+        <main class="lg:w-3/4 xl:w-4/5 space-y-12">
+            @foreach($committees as $category => $members)
+            <section id="{{ str($category)->slug() }}" class="scroll-mt-32">
+                <div class="bg-white dark:bg-slate-800 rounded-[2.5rem] border border-gray-100 dark:border-slate-700/50 shadow-xl shadow-blue-900/5 overflow-hidden transition-all hover:shadow-blue-900/10 group">
+                    
+                    <!-- Card Header -->
+                    <div class="px-8 md:px-12 py-8 bg-slate-50/50 dark:bg-slate-900/30 border-b border-gray-50 dark:border-slate-700/50 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div class="space-y-1">
+                            <h2 class="text-xl md:text-2xl font-black text-primary-blue dark:text-white uppercase tracking-tight">{{ $category }}</h2>
+                            <p class="text-[10px] font-bold text-blue-500 uppercase tracking-widest">Committee Board</p>
+                        </div>
+                        <div class="px-4 py-1.5 bg-white dark:bg-slate-800 rounded-full border border-gray-100 dark:border-slate-700">
+                            <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest">{{ $members->count() }} Members</span>
+                        </div>
+                    </div>
+
+                    <!-- Card Body: Two-Column Member Grid -->
+                    <div class="p-8 md:p-12">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+                            @foreach($members as $member)
+                            <div class="flex items-start gap-4 pb-6 border-b border-gray-50 dark:border-slate-700/30 last:border-0 md:[&:nth-last-child(2)]:border-0 md:last:border-0">
+                                <span class="text-[10px] font-black text-gray-200 dark:text-slate-600 mt-1 italic">{{ str_pad($loop->iteration, 2, '0', STR_PAD_LEFT) }}</span>
+                                <div class="space-y-1.5">
+                                    <div class="flex flex-wrap items-center gap-2">
+                                        <h3 class="text-sm md:text-base font-bold text-primary-blue dark:text-white group-hover:text-blue-600 transition-colors">{{ $member->name }}</h3>
+                                        <span class="text-[9px] font-black px-2 py-0.5 bg-blue-50 dark:bg-blue-900/30 text-blue-500 rounded uppercase tracking-tighter">
+                                            {{ $member->role ?? 'Member' }}
+                                        </span>
+                                    </div>
+                                    <p class="text-[11px] md:text-xs text-gray-500 dark:text-gray-400 leading-relaxed font-medium">{{ $member->affiliation }}</p>
+                                </div>
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @endforeach
+        </main>
+
+    </div>
+</div>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 3px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #e2e8f0;
+        border-radius: 10px;
+    }
+    .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #334155;
+    }
+</style>
+
 @endsection
