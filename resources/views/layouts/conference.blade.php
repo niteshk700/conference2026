@@ -179,8 +179,8 @@
             </div>
         </div>
         <div class="text-center pt-8 flex flex-col items-center gap-4">
-            <div class="bg-white/5 px-4 py-1 rounded-full border border-white/10">
-                <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Visitors: <span class="text-accent-yellow">{{ $settings['view_count'] ?? 0 }}</span></p>
+            <div class="bg-white/10 px-6 py-2 rounded-full border border-white/20 backdrop-blur-sm">
+                <p class="text-xs md:text-sm text-gray-300 font-bold uppercase tracking-[0.2em]">Total Visitors: <span class="text-accent-yellow text-lg ml-2">{{ number_format($settings['view_count'] ?? 0) }}</span></p>
             </div>
             <p class="text-gray-500 text-[10px] md:text-xs uppercase tracking-[0.2em]">&copy; 2026 NITRA Technical Campus. All Rights Reserved. | ICETA-2026</p>
         </div>
