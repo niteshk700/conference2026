@@ -4,9 +4,22 @@
 
 @section('content')
 <!-- Page Title -->
-<section class="bg-primary-blue dark:bg-black py-20 text-center transition-colors duration-300">
-    <h1 class="text-4xl md:text-5xl font-black text-white uppercase tracking-tight mb-2">Our Committee</h1>
-    <p class="text-accent-yellow font-bold uppercase tracking-widest text-sm">Organizing for Excellence</p>
+<section class="bg-primary-blue dark:bg-black py-20 text-center transition-colors duration-300 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+        <img src="{{ asset('assets/images/hero-bg.jpg') }}" alt="Background" class="w-full h-full object-cover">
+    </div>
+    <div class="relative z-10 px-4">
+        <p class="text-white/70 font-bold uppercase tracking-[0.3em] text-[10px] md:text-xs mb-4">NITRA TECHNICAL CAMPUS (802), GHAZIABAD</p>
+        <h1 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tight mb-4 leading-tight">International Conference on <br class="hidden md:block"> Emerging Technologies and its Applications <br class="hidden md:block"> <span class="text-accent-yellow">(ICETA-2026)</span></h1>
+        <div class="inline-block px-6 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
+            <p class="text-white font-black uppercase tracking-widest text-xs md:text-sm">17th – 18th July 2026</p>
+        </div>
+        <div class="mt-8 flex justify-center items-center gap-4">
+            <div class="w-12 h-0.5 bg-accent-yellow"></div>
+            <h2 class="text-accent-yellow font-black uppercase tracking-[0.4em] text-sm md:text-base">Organizing Committees</h2>
+            <div class="w-12 h-0.5 bg-accent-yellow"></div>
+        </div>
+    </div>
 </section>
 
 <!-- Committee Dynamic Sections -->
@@ -28,6 +41,9 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             @foreach($members as $member)
             <div class="bg-white dark:bg-slate-800/50 p-8 rounded-[2rem] shadow-2xl shadow-blue-900/5 dark:shadow-none text-center border border-gray-100 dark:border-slate-700/50 transition-all hover:-translate-y-2 hover:border-accent-yellow/50 group">
+                <div class="mb-4">
+                    <span class="text-accent-yellow/20 text-4xl font-black italic">{{ sprintf('%02d', $loop->iteration) }}</span>
+                </div>
                 <h3 class="text-xl font-bold text-primary-blue dark:text-white mb-2 transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-accent-yellow">{{ $member->name }}</h3>
                 @if($member->role)
                 <p class="text-blue-600 dark:text-blue-400 font-extrabold text-[10px] uppercase tracking-[0.2em] mb-3">{{ $member->role }}</p>
