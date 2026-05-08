@@ -4,7 +4,7 @@
 
 @section('content')
 <!-- Hero Section -->
-<section class="relative min-h-screen flex flex-col justify-center items-center text-center text-white px-4 overflow-hidden bg-primary-blue dark:bg-black transition-colors duration-300 py-20">
+<section class="relative min-h-screen flex flex-col justify-center items-center text-center text-white px-2 overflow-hidden bg-primary-blue dark:bg-black transition-colors duration-300 py-20">
     <!-- Background Image with Overlay -->
     <div class="absolute inset-0 z-0">
         <img src="{{ asset('assets/images/hero-bg.jpg') }}" alt="Conference Background" class="w-full h-full object-cover opacity-30 dark:opacity-20">
@@ -14,9 +14,9 @@
     <!-- Content -->
     <div class="relative z-10 max-w-5xl animate-fade-in">
         <div class="mb-8 flex flex-col items-center">
-            <span class="inline-block px-4 py-1 bg-accent-yellow text-primary-blue font-black text-[10px] uppercase tracking-[0.4em] mb-4 rounded-full">College Code: 802</span>
+            <span class="inline-block px-2 py-1 bg-accent-yellow text-primary-blue font-black text-[10px] uppercase tracking-[0.4em] mb-4 rounded-full">College Code: 802</span>
             <p class="text-accent-yellow font-bold uppercase tracking-[0.3em] mb-4 text-sm md:text-base">{{ $settings['hero_subtitle'] ?? 'International Conference on' }}</p>
-            <h1 class="text-4xl md:text-7xl font-black mb-6 leading-tight uppercase tracking-tighter">{{ $settings['hero_title'] ?? 'Emerging Technologies & its Applications' }}</h1>
+            <h1 class="text-3xl md:text-3xl font-black mb-6 leading-tight uppercase tracking-tighter">{{ $settings['hero_title'] ?? 'Emerging Technologies & its Applications' }}</h1>
             <p class="text-xl md:text-2xl font-bold mb-8 text-white/80 dark:text-gray-400 uppercase tracking-[0.5em]">(ICETA-2026)</p>
         </div>
         
@@ -32,8 +32,8 @@
         </div>
 
         <div class="flex flex-wrap justify-center gap-6">
+            <a href="{{ route('registration') }}" class="px-10 py-4 bg-accent-yellow text-primary-blue rounded-xl font-black uppercase tracking-widest transition-all hover:scale-105 shadow-2xl shadow-yellow-500/20">Registration</a>
             <a href="{{ route('call-for-paper') }}" class="px-10 py-4 bg-accent-yellow text-primary-blue rounded-xl font-black uppercase tracking-widest transition-all hover:scale-105 shadow-2xl shadow-yellow-500/20">Call for Papers</a>
-            <a href="{{ route('registration') }}" class="px-10 py-4 rounded-xl font-black uppercase tracking-widest border-2 border-white/20 text-white transition-all hover:bg-white hover:text-primary-blue">Registration</a>
         </div>
     </div>
 </section>
@@ -50,28 +50,28 @@
 </div>
 
 <!-- Leadership Section -->
-<section class="py-24 px-8 bg-slate-50 dark:bg-slate-950">
+<section class="py-20 px-8 bg-slate-50 dark:bg-slate-950">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-20">
-            <h2 class="text-3xl md:text-4xl font-black text-primary-blue dark:text-white mb-4 uppercase tracking-tight">Conference Leadership</h2>
+            <h2 class="text-2xl md:text-3xl font-black text-primary-blue dark:text-white mb-4 uppercase tracking-tight">Conference Leadership</h2>
             <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Chief Patron -->
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
                 <p class="text-blue-600 font-black text-[10px] uppercase tracking-widest mb-4">Chief Patron</p>
                 <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Prof. (Dr.) J.P Panday</h3>
                 <p class="text-gray-500 text-sm italic">Vice Chancellor, AKTU Lucknow</p>
             </div>
             <!-- Patron -->
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
                 <p class="text-blue-600 font-black text-[10px] uppercase tracking-widest mb-4">Patron</p>
                 <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Dr. M.S. Parmar</h3>
                 <p class="text-gray-500 text-sm italic">Director General, NITRA</p>
             </div>
             <!-- Convener -->
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
                 <p class="text-blue-600 font-black text-[10px] uppercase tracking-widest mb-4">Convener</p>
                 <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Dr. B.K Sharma</h3>
                 <p class="text-gray-500 text-sm italic">Director, NTC</p>
@@ -81,22 +81,22 @@
 </section>
 
 <!-- About Sections -->
-<section class="py-24 px-8 max-w-7xl mx-auto">
+<section class="py-20 px-8 max-w-7xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
         <!-- About Conference -->
         <div class="space-y-8">
-            <div class="inline-block px-4 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-black text-[10px] uppercase tracking-widest rounded-full">Vision & Scope</div>
-            <h2 class="text-4xl font-black text-primary-blue dark:text-white leading-tight">About the <span class="text-blue-600 italic">Conference</span></h2>
-            <div class="space-y-6 text-gray-600 dark:text-gray-400 leading-relaxed text-lg">
+            <div class="inline-block px-2 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-black text-[10px] uppercase tracking-widest rounded-full">Vision & Scope</div>
+            <h2 class="text-3xl font-black text-primary-blue dark:text-white leading-tight">About the <span class="text-blue-600 italic">Conference</span></h2>
+            <div class="space-y-6 text-gray-600 dark:text-gray-400 leading-relaxed text-md">
                 <p>The International Conference on Emerging Technologies and its Applications (ICETA-2026) aims to bring together academicians, researchers, industry experts, and innovators to exchange knowledge and insights on the latest advancements in emerging technologies.</p>
                 <p>The conference focuses on areas such as Artificial Intelligence, IoT, Robotics, Cybersecurity, Cloud Computing, and Data Analytics, highlighting their applications in solving real-world challenges.</p>
             </div>
         </div>
         <!-- About Institute -->
         <div class="space-y-8">
-            <div class="inline-block px-4 py-1 bg-accent-yellow/10 text-blue-700 dark:text-accent-yellow font-black text-[10px] uppercase tracking-widest rounded-full">Host Institution</div>
-            <h2 class="text-4xl font-black text-primary-blue dark:text-white leading-tight">About the <span class="text-accent-yellow italic">Institute</span></h2>
-            <div class="space-y-6 text-gray-600 dark:text-gray-400 leading-relaxed text-lg">
+            <div class="inline-block px-2 py-1 bg-accent-yellow/10 text-blue-700 dark:text-accent-yellow font-black text-[10px] uppercase tracking-widest rounded-full">Host Institution</div>
+            <h2 class="text-3xl font-black text-primary-blue dark:text-white leading-tight">About the <span class="text-accent-yellow italic">Institute</span></h2>
+            <div class="space-y-6 text-gray-600 dark:text-gray-400 leading-relaxed text-md">
                 <p>NITRA Technical Campus (NTC), Ghaziabad, is the academic arm of the Northern India Textile Research Association (NITRA), a premier institute established in 1974 by the Government of India and the textile industry.</p>
                 <p>Approved by AICTE and affiliated with AKTU, NTC provides a dynamic learning environment supported by experienced faculty, modern infrastructure, and research-driven practices.</p>
             </div>
@@ -105,11 +105,11 @@
 </section>
 
 <!-- Objectives Section -->
-<section class="py-24 bg-primary-blue dark:bg-black text-white px-8">
+<section class="py-20 bg-primary-blue dark:bg-black text-white px-8">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
             <p class="text-accent-yellow font-black text-[10px] uppercase tracking-[0.3em] mb-4">Core Mission</p>
-            <h2 class="text-4xl font-black uppercase tracking-tight">Conference Objectives</h2>
+            <h2 class="text-3xl font-black uppercase tracking-tight">Conference Objectives</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="p-8 bg-white/5 border border-white/10 rounded-2xl">
@@ -133,10 +133,10 @@
 </section>
 
 <!-- Detailed Tracks Section -->
-<section class="py-24 px-8 bg-white dark:bg-slate-900">
+<section class="py-20 px-8 bg-white dark:bg-slate-900">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-20">
-            <h2 class="text-3xl md:text-4xl font-black text-primary-blue dark:text-white mb-4 uppercase tracking-tight">Technical Tracks</h2>
+            <h2 class="text-2xl md:text-3xl font-black text-primary-blue dark:text-white mb-4 uppercase tracking-tight">Technical Tracks</h2>
             <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
         </div>
 
@@ -202,11 +202,11 @@
 </section>
 
 <!-- Guidelines Section -->
-<section class="py-24 px-8 bg-slate-50 dark:bg-slate-950">
+<section class="py-20 px-8 bg-slate-50 dark:bg-slate-950">
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
         <div class="space-y-8">
-            <h2 class="text-3xl font-black text-primary-blue dark:text-white uppercase tracking-tighter">Abstract Guidelines</h2>
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-gray-100 dark:border-slate-800 space-y-4 text-sm text-gray-600 dark:text-gray-400">
+            <h2 class="text-2xl font-black text-primary-blue dark:text-white uppercase tracking-tighter">Abstract Guidelines</h2>
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-gray-100 dark:border-slate-800 space-y-4 text-sm text-gray-600 dark:text-gray-400">
                 <p>• <strong>Length:</strong> 200–300 words</p>
                 <p>• <strong>Required:</strong> Purpose/Objectives, Methodology, Key Findings</p>
                 <p>• <strong>Keywords:</strong> 4–6 keywords at the end</p>
@@ -217,8 +217,8 @@
             </div>
         </div>
         <div class="space-y-8">
-            <h2 class="text-3xl font-black text-primary-blue dark:text-white uppercase tracking-tighter">Publication Opp.</h2>
-            <div class="bg-primary-blue text-white p-8 rounded-3xl shadow-2xl shadow-blue-900/40 space-y-6">
+            <h2 class="text-2xl font-black text-primary-blue dark:text-white uppercase tracking-tighter">Publication Opp.</h2>
+            <div class="bg-primary-blue text-white p-8 rounded-2xl shadow-2xl shadow-blue-900/40 space-y-6">
                 <div class="flex items-center gap-4">
                     <div class="w-12 h-12 bg-accent-yellow rounded-xl flex items-center justify-center text-primary-blue text-xl">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.994 7.994 0 0111 4c1.068 0 2.082.209 3 .588V13c-.918-.379-1.932-.588-3-.588-1.068 0-2.082.209-3 .588V4.804zM3 13V4.804A7.994 7.994 0 015 4c1.068 0 2.082.209 3 .588V13c-.918-.379-1.932-.588-3-.588-1.068 0-2.082.209-3 .588zM17 13.5l-2-1V5l2 1v7.5zm-14-1V5l2-1v7.5l-2 1z"></path></svg>
@@ -235,13 +235,13 @@
 </section>
 
 <!-- Registration & Important Dates -->
-<section class="py-24 px-8 max-w-7xl mx-auto">
+<section class="py-20 px-8 max-w-7xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
         <div>
-            <h2 class="text-3xl font-black text-primary-blue dark:text-white mb-10 uppercase tracking-tighter">Timeline</h2>
+            <h2 class="text-2xl font-black text-primary-blue dark:text-white mb-10 uppercase tracking-tighter">Timeline</h2>
             <div class="space-y-6">
                 @foreach($dates as $item)
-                <div class="flex items-center justify-between p-6 rounded-2xl {{ $item->is_highlighted ? 'bg-blue-600 text-white shadow-xl shadow-blue-900/20' : 'bg-slate-50 dark:bg-slate-900 border border-gray-100 dark:border-slate-800' }}">
+                <div class="flex items-center justify-between p-2 rounded-1xl {{ $item->is_highlighted ? 'bg-blue-600 text-white shadow-xl shadow-blue-900/20' : 'bg-slate-50 dark:bg-slate-900 border border-gray-100 dark:border-slate-800' }}">
                     <span class="text-sm font-black uppercase tracking-widest">{{ $item->label }}</span>
                     <span class="font-bold {{ $item->is_highlighted ? 'text-accent-yellow' : 'text-primary-blue dark:text-blue-400' }}">{{ $item->date_value }}</span>
                 </div>
@@ -249,8 +249,8 @@
             </div>
         </div>
         <div>
-            <h2 class="text-3xl font-black text-primary-blue dark:text-white mb-10 uppercase tracking-tighter">Registration Process</h2>
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-gray-100 dark:border-slate-800 space-y-8">
+            <h2 class="text-2xl font-black text-primary-blue dark:text-white mb-10 uppercase tracking-tighter">Registration Process</h2>
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-gray-100 dark:border-slate-800 space-y-8">
                 <div class="flex items-center justify-between border-b dark:border-slate-800 pb-4">
                     <span class="font-bold text-gray-500">Registration Fee</span>
                     <span class="text-2xl font-black text-primary-blue dark:text-accent-yellow">₹1500</span>
@@ -275,24 +275,5 @@
     </div>
 </section>
 
-<!-- Footer Contact -->
-<section class="py-24 bg-primary-blue dark:bg-black text-white px-8 text-center border-t border-white/10">
-    <div class="max-w-4xl mx-auto space-y-8">
-        <h2 class="text-3xl font-black uppercase tracking-tighter">Contact Us</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-blue-100">
-            <div>
-                <p class="font-black text-accent-yellow uppercase mb-2">Mobile</p>
-                <p>9312286884, 8130177337</p>
-            </div>
-            <div>
-                <p class="font-black text-accent-yellow uppercase mb-2">Phone</p>
-                <p>0120-2807390-95</p>
-            </div>
-            <div>
-                <p class="font-black text-accent-yellow uppercase mb-2">Email</p>
-                <p>conference2026@nitra.ac.in</p>
-            </div>
-        </div>
-    </div>
-</section>
+
 @endsection

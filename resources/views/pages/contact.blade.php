@@ -72,11 +72,15 @@
     </div>
 </section>
 
-<!-- Map Placeholder -->
-<section class="h-[400px] w-full bg-slate-200 dark:bg-slate-950 flex items-center justify-center group overflow-hidden transition-colors duration-300">
-    <div class="text-center group-hover:scale-110 transition-transform duration-700">
-        <svg class="w-12 h-12 text-gray-400 dark:text-gray-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
-        <p class="text-gray-500 dark:text-gray-600 font-bold uppercase tracking-widest text-xs italic">Interactive Map Interface: Sector-23, Ghaziabad</p>
-    </div>
+<!-- Live Map -->
+<section class="h-[500px] w-full border-t border-gray-100 dark:border-slate-800 transition-colors duration-300">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.3331308658994!2d77.4559226!3d28.689136799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf19d0066c2bd%3A0xce2128423fa59ccd!2sNITRA%20Technical%20Campus!5e1!3m2!1sen!2sin!4v1778269853032!5m2!1sen!2sin" 
+        class="w-full h-[500px]" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
 </section>
 @endsection

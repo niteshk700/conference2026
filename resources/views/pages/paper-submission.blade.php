@@ -18,7 +18,7 @@
         <!-- Abstract Guidelines -->
         <div class="space-y-12">
             <div>
-                <h2 class="text-3xl font-black text-primary-blue dark:text-white uppercase tracking-tighter mb-8 flex items-center gap-4">
+                <h2 class="text-2xl font-black text-primary-blue dark:text-white uppercase tracking-tighter mb-8 flex items-center gap-4">
                     <span class="w-12 h-12 bg-blue-50 dark:bg-slate-800 rounded-2xl flex items-center justify-center text-blue-600 font-black">A</span>
                     Abstract Guidelines
                 </h2>
@@ -42,7 +42,7 @@
         <!-- Full Paper Guidelines -->
         <div class="space-y-12">
             <div>
-                <h2 class="text-3xl font-black text-primary-blue dark:text-white uppercase tracking-tighter mb-8 flex items-center gap-4">
+                <h2 class="text-2xl font-black text-primary-blue dark:text-white uppercase tracking-tighter mb-8 flex items-center gap-4">
                     <span class="w-12 h-12 bg-blue-50 dark:bg-slate-800 rounded-2xl flex items-center justify-center text-blue-600 font-black">M</span>
                     Manuscript Preparation
                 </h2>

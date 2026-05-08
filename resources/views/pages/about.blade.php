@@ -6,7 +6,7 @@
 <!-- Page Header -->
 <section class="bg-primary-blue dark:bg-black py-20 text-center relative overflow-hidden transition-colors duration-300">
     <div class="relative z-10">
-        <h1 class="text-4xl md:text-5xl font-black text-white uppercase tracking-tight mb-2">About the Conference</h1>
+        <h1 class="text-2xl md:text-5xl font-black text-white uppercase tracking-tight mb-2">About the Conference</h1>
         <p class="text-accent-yellow font-bold uppercase tracking-widest text-sm">Vision, Mission & Host Institution</p>
     </div>
 </section>
@@ -18,8 +18,8 @@
     <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div class="space-y-8">
             <div class="inline-block px-4 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-black text-[10px] uppercase tracking-widest rounded-full">Conference Overview</div>
-            <h2 class="text-3xl md:text-4xl font-black text-primary-blue dark:text-white leading-tight uppercase tracking-tighter">ICETA-2026</h2>
-            <div class="space-y-6 text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+            <h2 class="text-3xl md:text-2xl font-black text-primary-blue dark:text-white leading-tight uppercase tracking-tighter">ICETA-2026</h2>
+            <div class="space-y-6 text-md text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>The International Conference on Emerging Technologies and its Applications (ICETA-2026) aims to bring together academicians, researchers, industry experts, and innovators to exchange knowledge and insights on the latest advancements in emerging technologies.</p>
                 <p>The conference focuses on areas such as Artificial Intelligence, IoT, Robotics, Cybersecurity, Cloud Computing, and Data Analytics, highlighting their applications in solving real-world challenges.</p>
                 <p>It provides a multidisciplinary platform for discussing innovations, trends, and practical implementations across sectors like Textile, healthcare, agriculture, smart cities, and sustainability. ICETA-2026 encourages collaboration, research excellence, and the development of innovative, technology-driven solutions for a sustainable and digitally empowered future.</p>
@@ -56,11 +56,11 @@
         </div>
         <div class="order-1 lg:order-2 space-y-8">
             <div class="inline-block px-4 py-1 bg-accent-yellow/10 text-blue-700 dark:text-accent-yellow font-black text-[10px] uppercase tracking-widest rounded-full">Host Institution</div>
-            <h2 class="text-3xl md:text-4xl font-black text-primary-blue dark:text-white leading-tight uppercase tracking-tighter">NITRA <span class="text-blue-600 italic">Technical Campus</span></h2>
-            <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">A center of excellence in technical education and research, supported by experienced faculty and modern infrastructure.</p>
+            <h2 class="text-3xl md:text-2xl font-black text-primary-blue dark:text-white leading-tight uppercase tracking-tighter">NITRA <span class="text-blue-600 italic">Technical Campus</span></h2>
+            <p class="text-md text-gray-600 dark:text-gray-400 leading-relaxed">A center of excellence in technical education and research, supported by experienced faculty and modern infrastructure.</p>
             <div class="pt-8 border-t border-gray-100 dark:border-slate-800 flex gap-12">
                 <div>
-                    <p class="text-2xl font-black text-primary-blue dark:text-white">1974</p>
+                    <p class="text-2xl font-black text-primary-blue dark:text-white">2012</p>
                     <p class="text-[10px] font-black uppercase tracking-widest text-gray-400">Established</p>
                 </div>
                 <div>

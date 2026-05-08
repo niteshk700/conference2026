@@ -16,17 +16,17 @@ class ConferenceController extends Controller
         return [
             // Marquee announcements at the top
             'marquees' => collect([
-                (object)['text' => 'Abstract Submission Deadline: 25 May 2026', 'url' => route('paper-submission')],
-                (object)['text' => 'Notification of Acceptance: 30 May 2026', 'url' => route('paper-submission')],
-                (object)['text' => 'Full Paper Submission Deadline: 10 June 2026', 'url' => route('paper-submission')],
-                (object)['text' => 'Registration Deadline: 15 June 2026', 'url' => route('registration')],
-                (object)['text' => 'Conference Dates: 17th - 18th July 2026', 'url' => route('home')],
+                (object)['text' => 'Abstract Submission Deadline: 25 May 2026', 'url' => '#'],
+                (object)['text' => 'Notification of Acceptance: 30 May 2026', 'url' => '#'],
+                (object)['text' => 'Full Paper Submission Deadline: 10 June 2026', 'url' => '#'],
+                (object)['text' => 'Registration Deadline: 15 June 2026', 'url' => '#'],
+                (object)['text' => 'Conference Dates: 17th - 18th July 2026', 'url' => '#'],
             ]),
 
             // Global site settings (Used in Hero and Footer)
             'settings' => [
                 'hero_title' => 'Emerging Technologies and its Applications',
-                'hero_subtitle' => 'International Conference on',
+                'hero_subtitle' => 'International Conference',
                 'conference_overview' => 'The International Conference on Emerging Technologies and its Applications (ICETA-2026) aims to bring together academicians, researchers, industry experts, and innovators to exchange knowledge and insights on the latest advancements in emerging technologies.',
                 'key_focus_areas' => 'Advanced Computing, Artificial Intelligence, Cyber Security, Internet of Things (IoT), Sustainable Development, Robotics, Data Analytics',
                 'view_count' => $this->getVisitorCount(),
@@ -77,101 +77,119 @@ class ConferenceController extends Controller
 
     public function committee()
     {
+        // TOGGLE: Set to true to show actual lists, false to show "Coming Soon"
+        $isLive = false;
+
+        // PRESERVED DATA (Hidden for now)
+        $technicalProgramData = collect([
+            (object)['name' => 'Dr. S. K. Dubey', 'affiliation' => 'Professor-Head CSE, Amity University, Noida'],
+            (object)['name' => 'Dr. Amit Singhal', 'affiliation' => 'Professor-Head CSE, RKGIT, Ghaziabad'],
+            (object)['name' => 'Dr. Jitendra Singh', 'affiliation' => 'Professor-Head CSE, SRM Institute of Science and Technology'],
+            (object)['name' => 'Dr. Pawan Upadhyay', 'affiliation' => 'Professor-CSE, Jaypee Institute of Information Technology, Noida'],
+            (object)['name' => 'Dr. Arun Prakash Agrawal', 'affiliation' => 'Professor-CSE, Bennett University, Greater Noida'],
+            (object)['name' => 'Dr. Gaurav Agarwal', 'affiliation' => 'Professor-CSE, Galgotias University, Greater Noida'],
+            (object)['name' => 'Dr. Analap Pathak', 'affiliation' => 'Associate Professor-CSE, KIET Group of Institutions, Ghaziabad'],
+            (object)['name' => 'Dr. Jaswinder Singh', 'affiliation' => 'Associate Professor-CSE, IILM University, Greater Noida'],
+            (object)['name' => 'Dr. Ashish Dixit', 'affiliation' => 'Associate Professor-CSE, AKGEC, Ghaziabad'],
+            (object)['name' => 'Dr. Sachin Jain', 'affiliation' => 'Associate Professor-CSE, AKGEC, Ghaziabad'],
+            (object)['name' => 'Dr. Kadambari Agarwal', 'affiliation' => 'Professor-CSE, ABESEC, Ghaziabad'],
+            (object)['name' => 'Dr. Vivek Srivastava', 'affiliation' => 'Associate Professor-CSE, ABESEC, Ghaziabad'],
+        ]);
+
+        $keynoteSpeakersData = collect([
+            (object)['name' => 'Prof. (Dr.) Abhay Bansal', 'affiliation' => 'Bennett University, Greater Noida'],
+            (object)['name' => 'Prof. (Dr.) Ajay Rana', 'affiliation' => 'Amity University, Greater Noida'],
+            (object)['name' => 'Prof. (Dr.) Arun Sharma', 'affiliation' => 'Indira Gandhi Delhi Technical University'],
+            (object)['name' => 'Prof. (Dr.) Uma Shankar Pandey', 'affiliation' => 'Delhi University'],
+            (object)['name' => 'Dr. Avadhesh Kumar Gupta', 'affiliation' => 'IILM University, Greater Noida'],
+            (object)['name' => 'Dr. Sandeep Poddar', 'affiliation' => 'Lincoln University College, Malaysia'],
+            (object)['name' => 'Prof. Kumud Saxena', 'affiliation' => 'Lloyd Institute of Engineering and Technology'],
+            (object)['name' => 'Dr. Manoj Sharma', 'affiliation' => 'Bio-statistics Professional, California, USA'],
+            (object)['name' => 'Dr. Ankit Vidyarthi', 'affiliation' => 'Jaypee Institute of Information Technology, Noida'],
+            (object)['name' => 'Mr. Saurabh Saxena', 'affiliation' => 'AwareBase Corp, Canada'],
+        ]);
+
+        // ACTIVE COMMITTEES
         $committees = collect([
-            'Conference Leadership' => collect([
-                (object)['name' => 'Prof. (Dr.) J.P Panday', 'role' => 'Chief Patron', 'affiliation' => 'Vice Chancellor, AKTU Lucknow'],
-                (object)['name' => 'Shri. Vidit Jain', 'role' => 'Chief Patron', 'affiliation' => 'Chairman-NITRA Council of Admin'],
-                (object)['name' => 'Dr. M.S. Parmar', 'role' => 'Patron', 'affiliation' => 'Director General, NITRA'],
-                (object)['name' => 'Dr. B.K Sharma', 'role' => 'Convener', 'affiliation' => 'Director, NTC'],
-                (object)['name' => 'Mr. K.K Dewan', 'role' => 'Coordinator', 'affiliation' => 'Registrar, NITRA Technical Campus'],
-                (object)['name' => 'Dr. A.P Srivastava', 'role' => 'Coordinator', 'affiliation' => 'Head of Department (CSE), NTC'],
+            'Registration Committee' => collect([
+                (object)['name' => 'Ms. Priya Tyagi', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. Abhay Chaudhary', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. Madan Gopal', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Students Volunteers', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
             ]),
-
-            'Eminent Keynote Speakers' => collect([
-                (object)['name' => 'Prof. (Dr.) Abhay Bansal', 'role' => 'Keynote Speaker', 'affiliation' => 'Bennett University, Greater Noida'],
-                (object)['name' => 'Prof. (Dr.) Ajay Rana', 'role' => 'Keynote Speaker', 'affiliation' => 'Amity University, Greater Noida'],
-                (object)['name' => 'Prof. (Dr.) Arun Sharma', 'role' => 'Keynote Speaker', 'affiliation' => 'Indira Gandhi Delhi Technical University'],
-                (object)['name' => 'Prof. (Dr.) Uma Shankar Pandey', 'role' => 'Keynote Speaker', 'affiliation' => 'Delhi University'],
-                (object)['name' => 'Dr. Avadhesh Kumar Gupta', 'role' => 'Keynote Speaker', 'affiliation' => 'IILM University, Greater Noida'],
-                (object)['name' => 'Dr. Sandeep Poddar', 'role' => 'Keynote Speaker', 'affiliation' => 'Lincoln University College, Malaysia'],
-                (object)['name' => 'Prof. Kumud Saxena', 'role' => 'Keynote Speaker', 'affiliation' => 'Lloyd Institute of Engineering and Technology'],
-                (object)['name' => 'Dr. Manoj Sharma', 'role' => 'Keynote Speaker', 'affiliation' => 'Bio-statistics Professional, California, USA'],
-                (object)['name' => 'Dr. Ankit Vidyarthi', 'role' => 'Keynote Speaker', 'affiliation' => 'Jaypee Institute of Information Technology, Noida'],
-                (object)['name' => 'Mr. Saurabh Saxena', 'role' => 'Keynote Speaker', 'affiliation' => 'AwareBase Corp, Canada'],
+            'Inaugural and Lamp Lighting' => collect([
+                (object)['name' => 'Ms. Divya Pachauri', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Ms. Priyanka Arora', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Students Volunteers', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
             ]),
-
-            'Advisory Committee' => collect([
-                (object)['name' => 'Dr. Sandeep Poddar', 'role' => 'Member', 'affiliation' => 'Lincoln University College, Malaysia'],
-                (object)['name' => 'Dr. Manoj Sharma', 'role' => 'Member', 'affiliation' => 'Bio-statistics Professional, California, USA'],
-                (object)['name' => 'Prof. (Dr.) Mirela Blaga', 'role' => 'Member', 'affiliation' => 'Gheorghe Asachi din Iasi, Romania'],
-                (object)['name' => 'Mr. Saurabh Saxena', 'role' => 'Member', 'affiliation' => 'AwareBase Corp, Canada'],
-                (object)['name' => 'Mr. Tara Shanker', 'role' => 'Member', 'affiliation' => 'MeitY, Govt. of India'],
-                (object)['name' => 'Mr. Arvind Kumar', 'role' => 'Member', 'affiliation' => 'Senior Advisor at C-DAC, Govt. of India'],
-                (object)['name' => 'Prof. (Dr.) Abhay Bansal', 'role' => 'Member', 'affiliation' => 'Bennett University, Greater Noida'],
-                (object)['name' => 'Prof. (Dr.) Ajay Rana', 'role' => 'Member', 'affiliation' => 'Amity University, Greater Noida'],
-                (object)['name' => 'Prof. (Dr.) K. P. Yadav', 'role' => 'Member', 'affiliation' => 'MATS University, Raipur'],
-                (object)['name' => 'Prof. (Dr.) Anil K Ahlawat', 'role' => 'Member', 'affiliation' => 'IMS Engineering College'],
-                (object)['name' => 'Mr. Saurabh Agrawal', 'role' => 'Member', 'affiliation' => 'Patron & Past Chairman, CSI'],
-                (object)['name' => 'Mr. Gaurav Sharma', 'role' => 'Member', 'affiliation' => 'Director - STPI, MeitY, Govt. of India'],
-                (object)['name' => 'Prof. (Dr.) Nanhay Singh', 'role' => 'Member', 'affiliation' => 'NSUT, East Campus, Delhi'],
-                (object)['name' => 'Prof. (Dr.) Uma Shankar Pandey', 'role' => 'Member', 'affiliation' => 'Delhi University'],
-                (object)['name' => 'Prof. (Dr.) Syed Zeeshan Hussain', 'role' => 'Member', 'affiliation' => 'Jamia Millia Islamia'],
-                (object)['name' => 'Prof. (Dr.) Adesh Kr. Pandey', 'role' => 'Member', 'affiliation' => 'KIET Group of Institutions, Ghaziabad'],
-                (object)['name' => 'Prof. (Dr.) Arun Sharma', 'role' => 'Member', 'affiliation' => 'Indira Gandhi Delhi Technical University'],
-                (object)['name' => 'Prof. (Dr.) Sunil Kr Pandey', 'role' => 'Member', 'affiliation' => 'I.T.S, Mohan Nagar, Ghaziabad'],
-                (object)['name' => 'Prof. (Dr.) R. P. Mahapatra', 'role' => 'Member', 'affiliation' => 'SRM Institute of Science and Technology'],
-                (object)['name' => 'Prof. (Dr.) Vineet Kumar Sharma', 'role' => 'Member', 'affiliation' => 'KIET Group of Institutions, Ghaziabad'],
-                (object)['name' => 'Dr. Pawan Singh', 'role' => 'Member', 'affiliation' => 'Amity School of Engineering and Technology, Lucknow'],
-                (object)['name' => 'Dr. Ankit Vidyarthi', 'role' => 'Member', 'affiliation' => 'Jaypee Institute of Information Technology, Noida'],
-                (object)['name' => 'Dr. Pawan Upadhyay', 'role' => 'Member', 'affiliation' => 'Jaypee Institute of Information Technology, Noida'],
-                (object)['name' => 'Dr. Avadhesh Kumar Gupta', 'role' => 'Member', 'affiliation' => 'IILM University, Greater Noida'],
-                (object)['name' => 'Dr. Bharat Bhushan Dua', 'role' => 'Member', 'affiliation' => 'Additional Director (Technical), (NIELIT) Delhi'],
-                (object)['name' => 'Mr. S. K. Das', 'role' => 'Member', 'affiliation' => 'Cogniscient Business Solutions, NOIDA'],
-                (object)['name' => 'Dr. S. K. Dubey', 'role' => 'Member', 'affiliation' => 'Amity University, NOIDA'],
-                (object)['name' => 'Dr. Amit Singhal', 'role' => 'Member', 'affiliation' => 'RKGIT, Ghaziabad'],
-                (object)['name' => 'Dr. Jitendra Singh', 'role' => 'Member', 'affiliation' => 'SRM Institute of Science and Technology'],
-                (object)['name' => 'Dr. Arun Prakash Agrawal', 'role' => 'Member', 'affiliation' => 'Bennett University, Greater Noida'],
-                (object)['name' => 'Dr. Birendra Kumar Sharma', 'role' => 'Member', 'affiliation' => 'MMMUT, Gorakhpur'],
-                (object)['name' => 'Dr. Gaurav Agarwal', 'role' => 'Member', 'affiliation' => 'Galgotias University, Greater Noida'],
-                (object)['name' => 'Mr. Arun Choudhary', 'role' => 'Member', 'affiliation' => 'HRIT University, Ghaziabad'],
-                (object)['name' => 'Dr. Analp Pathak', 'role' => 'Member', 'affiliation' => 'KIET Group of Institutions, Ghaziabad'],
-                (object)['name' => 'Dr. Jaswinder Singh', 'role' => 'Member', 'affiliation' => 'IILM University, Greater Noida'],
+            'Anchoring Committee' => collect([
+                (object)['name' => 'Mr. Partha Basu', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Dr. Meghna Tyagi', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
             ]),
-
-            'Technical Program Committee' => collect([
-                (object)['name' => 'Dr. S. K. Dubey', 'role' => 'Professor-Head CSE', 'affiliation' => 'Amity University, Noida'],
-                (object)['name' => 'Dr. Amit Singhal', 'role' => 'Professor-Head CSE', 'affiliation' => 'RKGIT, Ghaziabad'],
-                (object)['name' => 'Dr. Jitendra Singh', 'role' => 'Professor-Head CSE', 'affiliation' => 'SRM Institute of Science and Technology'],
-                (object)['name' => 'Dr. Pawan Upadhyay', 'role' => 'Professor-CSE', 'affiliation' => 'Jaypee Institute of Information Technology, Noida'],
-                (object)['name' => 'Dr. Arun Prakash Agrawal', 'role' => 'Professor-CSE', 'affiliation' => 'Bennett University, Greater Noida'],
-                (object)['name' => 'Dr. Gaurav Agarwal', 'role' => 'Professor-CSE', 'affiliation' => 'Galgotias University, Greater Noida'],
-                (object)['name' => 'Dr. Analap Pathak', 'role' => 'Associate Professor-CSE', 'affiliation' => 'KIET Group of Institutions, Ghaziabad'],
-                (object)['name' => 'Dr. Jaswinder Singh', 'role' => 'Associate Professor-CSE', 'affiliation' => 'IILM University, Greater Noida'],
-                (object)['name' => 'Dr. Ashish Dixit', 'role' => 'Associate Professor-CSE', 'affiliation' => 'AKGEC, Ghaziabad'],
-                (object)['name' => 'Dr. Sachin Jain', 'role' => 'Associate Professor-CSE', 'affiliation' => 'AKGEC, Ghaziabad'],
-                (object)['name' => 'Dr. Kadambari Agarwal', 'role' => 'Professor-CSE', 'affiliation' => 'ABESEC, Ghaziabad'],
-                (object)['name' => 'Dr. Vivek Srivastava', 'role' => 'Associate Professor-CSE', 'affiliation' => 'ABESEC, Ghaziabad'],
+            'Transportation, Accommodation & Hospitality' => collect([
+                (object)['name' => 'Mr. Shashi Bhushan Bahuguna', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. Neeraj Sharma', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. Dharmendra Kumar', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Students Volunteers', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
             ]),
-
-            'Organizing Committee' => collect([
-                (object)['name' => 'Mr. Partha Basu', 'role' => 'Member', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
-                (object)['name' => 'Dr. Meghna Tyagi', 'role' => 'Member', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
-                (object)['name' => 'Mr. R.C. Yadaw', 'role' => 'Member', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
-                (object)['name' => 'Mr. Sourabh Jain', 'role' => 'Member', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
-                (object)['name' => 'Dr. Rajesh Kumar', 'role' => 'Member', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
-                (object)['name' => 'Ms. Divya Pachauri', 'role' => 'Member', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
-                (object)['name' => 'Ms. Priya Tyagi', 'role' => 'Member', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
-                (object)['name' => 'Ms. Akansha Rajput', 'role' => 'Member', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
-                (object)['name' => 'Mr. Abhay Chaudhary', 'role' => 'Member', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
-                (object)['name' => 'Mr. Saurabh Pathak', 'role' => 'Member', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
-                (object)['name' => 'Mr. Mohd Shahanawaz', 'role' => 'Member', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
-                (object)['name' => 'Ms. Sanjivani Sharma', 'role' => 'Member', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
-                (object)['name' => 'Ms. Priyanka Arora', 'role' => 'Member', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
-                (object)['name' => 'Dr. Rishab Raj', 'role' => 'Member', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
-                (object)['name' => 'Dr. Roopam Chauhan', 'role' => 'Member', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
-                (object)['name' => 'Mr. Shashi Bhushan Bahuguna', 'role' => 'Member', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
-                (object)['name' => 'Mr. Sanjay Gupta', 'role' => 'Member', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
-                (object)['name' => 'Mr. Neeraj Sharma', 'role' => 'Member', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+            'Reception, Decoration & Stage Management' => collect([
+                (object)['name' => 'Dr. Roopam Chauhan', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Ms. Sanjivani Sharma', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Students Volunteers', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+            ]),
+            'Technical Sessions Committee' => collect([
+                (object)['name' => 'Mr. R. C. Yadaw', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Dr. Rishab Raj', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Dr. Rajesh', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Ms. Divya Pachauri', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Ms. Priyanka Arora', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+            ]),
+            'Finance & Audit Committee' => collect([
+                (object)['name' => 'Mr. Atul Baijal', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. K. K. Dewan', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Dr. A.P. Srivastava', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. Sachin Bhatt', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+            ]),
+            'Food Committee' => collect([
+                (object)['name' => 'Mr. Saurabh Jain', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. Saurabh Pathak', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Students Volunteers', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+            ]),
+            'Press Publicity & Media Management' => collect([
+                (object)['name' => 'Mr. Sanjay Gupta', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. Neeraj Sharma', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+            ]),
+            'Videography & Photography Committee' => collect([
+                (object)['name' => 'Mr. Akash Kumar', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. Raju', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+            ]),
+            'Website Management Committee' => collect([
+                (object)['name' => 'Mr. Nitesh Kumar', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. Shiva Chaudhary', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+            ]),
+            'Certificate Distribution Committee' => collect([
+                (object)['name' => 'Ms. Akansha Rajput', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. Mohd Shahanawaz', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. Rohitash Kumar', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Students Volunteers', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+            ]),
+            'Discipline Committee' => collect([
+                (object)['name' => 'Dr. Rishabh Raj', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. Sanjay Gupta', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. Harendra Kumar Singh', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. Yogesh Tiwari', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+            ]),
+            'Purchase Committee' => collect([
+                (object)['name' => 'Mr. K. K. Dewan', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Dr. A.P. Srivastava', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. Rizvi', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. Praveen Kumar', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+            ]),
+            'Technical Program Committee' => $isLive ? $technicalProgramData : collect([
+                (object)['name' => 'Details will be updated shortly', 'affiliation' => 'Coming Soon'],
+            ]),
+            'Our Eminent Keynote Speakers' => $isLive ? $keynoteSpeakersData : collect([
+                (object)['name' => 'Details will be updated shortly', 'affiliation' => 'Coming Soon'],
             ]),
         ]);
 

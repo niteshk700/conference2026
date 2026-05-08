@@ -150,7 +150,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-primary-blue dark:bg-black text-white pt-16 pb-8 px-8 mt-12 transition-colors duration-300">
+    <footer class="bg-primary-blue dark:bg-black text-white pt-16 pb-8 px-8 transition-colors duration-300">
         <div class="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-white/10 pb-12">
             <div class="space-y-4">
                 <h3 class="text-accent-yellow text-xl font-bold uppercase tracking-widest">NITRA Technical Campus</h3>
