@@ -76,5 +76,21 @@
         </div>
     </div>
 
+    <!-- Submission & Registration CTA -->
+    <div class="mt-20 bg-primary-blue dark:bg-black p-10 md:p-16 rounded-[3rem] text-center border border-white/10 shadow-2xl shadow-blue-900/20">
+        <div class="max-w-3xl mx-auto space-y-8">
+            <h2 class="text-2xl md:text-4xl font-black text-white uppercase tracking-tighter leading-tight">Ready to Submit your <span class="italic text-blue-400">Research?</span></h2>
+            <p class="text-base text-white/70 font-medium leading-relaxed">After preparing your manuscript according to the guidelines above, please complete your registration and payment to finalize your submission.</p>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-6 pt-4">
+                <a href="https://forms.gle/JGTN1HrSCGYc7CyK7" target="_blank" class="px-10 py-5 bg-accent-yellow text-primary-blue rounded-2xl font-black uppercase tracking-widest text-sm transition-all hover:scale-105 hover:shadow-2xl shadow-yellow-500/40">
+                    Submit & Register
+                </a>
+                <a href="{{ route('registration') }}" class="px-10 py-5 bg-white/5 border border-white/20 text-white rounded-2xl font-black uppercase tracking-widest text-sm transition-all hover:bg-white/10">
+                    View Payment Details
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 @endsection

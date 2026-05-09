@@ -32,7 +32,76 @@
         </aside>
 
         <!-- Proper Table Content -->
-        <main class="w-full lg:w-3/4 xl:w-4/5 space-y-16 md:space-y-24">
+<main class="w-full lg:w-3/4 xl:w-4/5 space-y-16 md:space-y-24">
+    <section class="py-20 px-8 bg-slate-50 dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto">
+            <!-- Chief Patrons Section -->
+            <div class="mb-24">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl md:text-3xl font-black text-primary-blue dark:text-white mb-4 uppercase tracking-tight">Chief Patrons</h2>
+                    <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
+                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Prof. (Dr.) J.P Panday</h3>
+                        <p class="text-gray-500 text-sm italic">Vice Chancellor, AKTU</p>
+                    </div>
+                    <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
+                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Shri. Vidit Jain</h3>
+                        <p class="text-gray-500 text-sm italic">Chairman-NITRA Council of Admin</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Patron & Convener Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 mt-8">
+                <!-- Patron -->
+                <div class="space-y-4">
+                    <div class="text-center">
+                        <h2 class="text-2xl md:text-3xl font-black text-primary-blue dark:text-white mb-2 uppercase tracking-tight">Patron</h2>
+                        <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
+                    </div>
+                    <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
+                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Dr. M.S. Parmar</h3>
+                        <p class="text-gray-500 text-sm italic">Director General, NITRA</p>
+                    </div>
+                </div>
+
+                <!-- Convener -->
+                <div class="space-y-4">
+                    <div class="text-center">
+                        <h2 class="text-2xl md:text-3xl font-black text-primary-blue dark:text-white mb-2 uppercase tracking-tight">Convener</h2>
+                        <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
+                    </div>
+                    <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
+                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Dr. B.K Sharma</h3>
+                        <p class="text-gray-500 text-sm italic">Director, NTC</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+         <div class="space-y-4" style="padding-block:20px">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl md:text-3xl font-black text-primary-blue dark:text-white mb-4 uppercase tracking-tight">Coordinators</h2>
+                    <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
+                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Prof. (Dr.) J.P Panday</h3>
+                        <p class="text-gray-500 text-sm italic">Vice Chancellor, AKTU</p>
+                    </div>
+                    <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
+                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Shri. Vidit Jain</h3>
+                        <p class="text-gray-500 text-sm italic">Chairman-NITRA Council of Admin</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
             @foreach($committees as $category => $members)
             <section id="{{ str($category)->slug() }}" class="scroll-mt-32 md:scroll-mt-36" style="padding-block:10px">
                 <div class="flex items-center gap-4 mb-2 md:mb-8">

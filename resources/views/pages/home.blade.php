@@ -259,15 +259,15 @@
                 <ol class="space-y-4 text-sm text-gray-600 dark:text-gray-400">
                     <li class="flex gap-4">
                         <span class="w-6 h-6 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center flex-shrink-0 text-[10px] font-black">1</span>
-                        <span>Complete online registration on the official website.</span>
+                        <span>Complete the <a href="https://forms.gle/JGTN1HrSCGYc7CyK7" target="_blank" class="text-blue-600 dark:text-blue-400 font-bold underline">Online Registration Form</a>.</span>
                     </li>
                     <li class="flex gap-4">
                         <span class="w-6 h-6 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center flex-shrink-0 text-[10px] font-black">2</span>
-                        <span>Make payment via NEFT/UPI/IMPS.</span>
+                        <span>Make payment via NEFT/UPI/IMPS (<a href="{{ route('registration') }}" class="text-blue-600 dark:text-blue-400 font-bold underline">View Bank Details</a>).</span>
                     </li>
                     <li class="flex gap-4">
                         <span class="w-6 h-6 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center flex-shrink-0 text-[10px] font-black">3</span>
-                        <span>Upload payment confirmation screenshot.</span>
+                        <span>Upload payment confirmation screenshot in the form.</span>
                     </li>
                 </ol>
             </div>

@@ -80,9 +80,14 @@
             <p class="text-accent-yellow font-black uppercase tracking-[0.4em] text-[10px]">Publication Partnership</p>
             <h2 class="text-2xl md:text-4xl font-black text-white uppercase tracking-tighter leading-tight">Published in the <span class="italic text-blue-400">JIEEE Journal</span></h2>
             <p class="text-base text-white font-medium leading-relaxed">All accepted papers will be published in the <strong>Journal of Informatics Electrical and Electronics Engineering</strong> following a rigorous peer-review process.</p>
-            <div class="inline-flex items-center gap-3 px-5 py-2 bg-white/5 border border-white/10 rounded-xl text-[9px] font-black uppercase tracking-widest text-accent-yellow">
-                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                Hybrid Presentation Mode Available
+            <div class="flex flex-col md:flex-row justify-center gap-6 pt-4 items-center">
+                <a href="https://forms.gle/JGTN1HrSCGYc7CyK7" target="_blank" class="px-10 py-5 bg-accent-yellow text-primary-blue rounded-2xl font-black uppercase tracking-widest text-sm transition-all hover:scale-105 hover:shadow-2xl shadow-yellow-500/40">
+                    Register for Conference
+                </a>
+                <div class="inline-flex items-center gap-3 px-5 py-2 bg-white/5 border border-white/10 rounded-xl text-[9px] font-black uppercase tracking-widest text-accent-yellow">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                    Hybrid Presentation Mode Available
+                </div>
             </div>
         </div>
     </div>
