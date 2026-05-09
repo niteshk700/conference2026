@@ -15,7 +15,7 @@
     <div class="relative z-10 max-w-5xl animate-fade-in">
         <div class="mb-8 flex flex-col items-center">
             <span class="inline-block px-2 py-1 bg-accent-yellow text-primary-blue font-black text-[10px] uppercase tracking-[0.4em] mb-4 rounded-full">College Code: 802</span>
-            <p class="text-accent-yellow font-bold uppercase tracking-[0.3em] mb-4 text-sm md:text-base">{{ $settings['hero_subtitle'] ?? 'International Conference on' }}</p>
+            <p class="text-3xl md:text-3xl font-black mb-6 leading-tight uppercase tracking-tighter">{{  'International Conference on' }}</p>
             <h1 class="text-3xl md:text-3xl font-black mb-6 leading-tight uppercase tracking-tighter">{{ $settings['hero_title'] ?? 'Emerging Technologies & its Applications' }}</h1>
             <p class="text-xl md:text-2xl font-bold mb-8 text-white/80 dark:text-gray-400 uppercase tracking-[0.5em]">(ICETA-2026)</p>
         </div>
@@ -43,63 +43,96 @@
     <div class="max-w-7xl mx-auto px-8 flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all">
         <p class="text-[10px] font-black uppercase tracking-widest text-gray-400">Sponsored By:</p>
         <span class="text-sm font-bold text-gray-600 dark:text-gray-300">Dr. A.P.J. Abdul Kalam Technical University, Lucknow</span>
-        <div class="w-px h-6 bg-gray-200"></div>
-        <p class="text-[10px] font-black uppercase tracking-widest text-gray-400">Associate Partners:</p>
-        <span class="text-sm font-bold text-gray-600 dark:text-gray-300">NITRA Technical Campus</span>
+        
     </div>
 </div>
 
 <!-- Leadership Section -->
-<section class="py-20 px-8 bg-slate-50 dark:bg-slate-950">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-20">
-            <h2 class="text-2xl md:text-3xl font-black text-primary-blue dark:text-white mb-4 uppercase tracking-tight">Conference Leadership</h2>
-            <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
-        </div>
+<div class="max-w-7xl mx-auto">
+            <!-- Chief Patrons Section -->
+            <div class="mb-24">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl md:text-3xl font-black text-primary-blue dark:text-white mb-4 uppercase tracking-tight">Chief Patrons</h2>
+                    <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
+                </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Chief Patron -->
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
-                <p class="text-blue-600 font-black text-[10px] uppercase tracking-widest mb-4">Chief Patron</p>
-                <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Prof. (Dr.) J.P Panday</h3>
-                <p class="text-gray-500 text-sm italic">Vice Chancellor, AKTU Lucknow</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
+                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Prof. (Dr.) J.P Panday</h3>
+                        <p class="text-gray-500 text-sm italic">Vice Chancellor, AKTU</p>
+                    </div>
+                    <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
+                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Shri. Vidit Jain</h3>
+                        <p class="text-gray-500 text-sm italic">Chairman-NITRA Council of Admin</p>
+                    </div>
+                </div>
             </div>
-            <!-- Patron -->
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
-                <p class="text-blue-600 font-black text-[10px] uppercase tracking-widest mb-4">Patron</p>
-                <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Dr. M.S. Parmar</h3>
-                <p class="text-gray-500 text-sm italic">Director General, NITRA</p>
-            </div>
-            <!-- Convener -->
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
-                <p class="text-blue-600 font-black text-[10px] uppercase tracking-widest mb-4">Convener</p>
-                <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Dr. B.K Sharma</h3>
-                <p class="text-gray-500 text-sm italic">Director, NTC</p>
+
+            <!-- Patron & Convener Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 mt-8">
+                <!-- Patron -->
+                <div class="space-y-4">
+                    <div class="text-center">
+                        <h2 class="text-2xl md:text-3xl font-black text-primary-blue dark:text-white mb-2 uppercase tracking-tight">Patron</h2>
+                        <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
+                    </div>
+                    <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
+                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Dr. M.S. Parmar</h3>
+                        <p class="text-gray-500 text-sm italic">Director General, NITRA</p>
+                    </div>
+                </div>
+
+                <!-- Convener -->
+                <div class="space-y-4">
+                    <div class="text-center">
+                        <h2 class="text-2xl md:text-3xl font-black text-primary-blue dark:text-white mb-2 uppercase tracking-tight">Convener</h2>
+                        <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
+                    </div>
+                    <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
+                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Dr. B.K Sharma</h3>
+                        <p class="text-gray-500 text-sm italic">Director, NTC</p>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
-</section>
+        
+         <div class="space-y-4" style="padding-block:20px">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl md:text-3xl font-black text-primary-blue dark:text-white mb-4 uppercase tracking-tight">Coordinators</h2>
+                    <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
+                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Mr. K.K Dewan
+</h3>
+                        <p class="text-gray-500 text-sm italic">Registrar</p>
+                    </div>
+                    <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
+                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Dr. A.P Srivastava</h3>
+                        <p class="text-gray-500 text-sm italic">Head of Department (CSE)</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
 <!-- About Sections -->
 <section class="py-20 px-8 max-w-7xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
         <!-- About Conference -->
         <div class="space-y-8">
-            <div class="inline-block px-2 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-black text-[10px] uppercase tracking-widest rounded-full">Vision & Scope</div>
             <h2 class="text-3xl font-black text-primary-blue dark:text-white leading-tight">About the <span class="text-blue-600 italic">Conference</span></h2>
             <div class="space-y-6 text-gray-600 dark:text-gray-400 leading-relaxed text-md">
-                <p>The International Conference on Emerging Technologies and its Applications (ICETA-2026) aims to bring together academicians, researchers, industry experts, and innovators to exchange knowledge and insights on the latest advancements in emerging technologies.</p>
-                <p>The conference focuses on areas such as Artificial Intelligence, IoT, Robotics, Cybersecurity, Cloud Computing, and Data Analytics, highlighting their applications in solving real-world challenges.</p>
-            </div>
+                <p style="text-align: justify;">The International Conference on Emerging Technologies and its Applications (ICETA-2026) aims to bring together academicians, researchers, industry experts, and innovators to exchange knowledge and insights on the latest advancements in emerging technologies. The conference focuses on areas such as Artificial Intelligence, IoT, Robotics, Cybersecurity, Cloud Computing, and Data Analytics, highlighting their applications in solving real-world challenges. It provides a multidisciplinary platform for discussing innovations, trends, and practical implementations across sectors like Textile, healthcare, agriculture, smart cities, and sustainability. ICETA-2026 encourages collaboration, research excellence, and the development of innovative, technology-driven solutions for a sustainable and digitally empowered future.</div>
         </div>
         <!-- About Institute -->
         <div class="space-y-8">
-            <div class="inline-block px-2 py-1 bg-accent-yellow/10 text-blue-700 dark:text-accent-yellow font-black text-[10px] uppercase tracking-widest rounded-full">Host Institution</div>
             <h2 class="text-3xl font-black text-primary-blue dark:text-white leading-tight">About the <span class="text-accent-yellow italic">Institute</span></h2>
             <div class="space-y-6 text-gray-600 dark:text-gray-400 leading-relaxed text-md">
-                <p>NITRA Technical Campus (NTC), Ghaziabad, is the academic arm of the Northern India Textile Research Association (NITRA), a premier institute established in 1974 by the Government of India and the textile industry.</p>
-                <p>Approved by AICTE and affiliated with AKTU, NTC provides a dynamic learning environment supported by experienced faculty, modern infrastructure, and research-driven practices.</p>
-            </div>
+                <p style="text-align: justify;">NITRA Technical Campus (NTC), Ghaziabad, is the academic wing of the Northern India Textile Research Association (NITRA), a premier institute established in 1974 by the Government of India and the textile industry. Affiliated with reputed bodies, NTC offers quality engineering and technology programs with a strong focus on innovation and industry relevance. The campus provides a dynamic learning environment supported by experienced faculty, modern infrastructure, and research-driven practices. It promotes interdisciplinary learning, skill development, and real-world exposure, aiming to nurture competent professionals with strong ethical values and a commitment to technological advancement.
+</p></div>
         </div>
     </div>
 </section>
@@ -114,19 +147,19 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="p-8 bg-white/5 border border-white/10 rounded-2xl">
                 <div class="w-10 h-10 bg-accent-yellow rounded-lg mb-6 flex items-center justify-center text-primary-blue font-black">01</div>
-                <p class="text-sm font-medium leading-relaxed">Promote advanced research in Emerging Technologies like AI, IoT, Textile, Robotics, and Data Analytics.</p>
+                <p class="text-sm font-medium leading-relaxed" style="text-align:justify;">Promote advanced research in Emerging Technologies like AI, IoT, Textile, Robotics, and Data Analytics.</p>
             </div>
             <div class="p-8 bg-white/5 border border-white/10 rounded-2xl">
                 <div class="w-10 h-10 bg-accent-yellow rounded-lg mb-6 flex items-center justify-center text-primary-blue font-black">02</div>
-                <p class="text-sm font-medium leading-relaxed">Encourage interdisciplinary collaboration among academia, industry, and policymakers.</p>
+                <p class="text-sm font-medium leading-relaxed" style="text-align:justify;">Encourage interdisciplinary collaboration among academia, industry, and policymakers.</p>
             </div>
             <div class="p-8 bg-white/5 border border-white/10 rounded-2xl">
                 <div class="w-10 h-10 bg-accent-yellow rounded-lg mb-6 flex items-center justify-center text-primary-blue font-black">03</div>
-                <p class="text-sm font-medium leading-relaxed">Address real-world challenges in sectors such as healthcare, agriculture, and smart cities.</p>
+                <p class="text-sm font-medium leading-relaxed" style="text-align:justify;">Address real-world challenges in sectors such as healthcare, agriculture, and smart cities.</p>
             </div>
             <div class="p-8 bg-white/5 border border-white/10 rounded-2xl">
                 <div class="w-10 h-10 bg-accent-yellow rounded-lg mb-6 flex items-center justify-center text-primary-blue font-black">04</div>
-                <p class="text-sm font-medium leading-relaxed">Strengthen academia–industry partnerships for innovation and knowledge transfer.</p>
+                <p class="text-sm font-medium leading-relaxed" style="text-align:justify;">Strengthen academia–industry partnerships for innovation and knowledge transfer.</p>
             </div>
         </div>
     </div>
@@ -217,7 +250,7 @@
             </div>
         </div>
         <div class="space-y-8">
-            <h2 class="text-2xl font-black text-primary-blue dark:text-white uppercase tracking-tighter">Publication Opp.</h2>
+            <h2 class="text-2xl font-black text-primary-blue dark:text-white uppercase tracking-tighter">Publication</h2>
             <div class="bg-primary-blue text-white p-8 rounded-2xl shadow-2xl shadow-blue-900/40 space-y-6">
                 <div class="flex items-center gap-4">
                     <div class="w-12 h-12 bg-accent-yellow rounded-xl flex items-center justify-center text-primary-blue text-xl">
@@ -226,9 +259,7 @@
                     <h3 class="text-xl font-bold italic">JIEEE Partnership</h3>
                 </div>
                 <p class="text-blue-100 leading-relaxed">All accepted papers will be published in the <strong>Journal of Informatics Electrical and Electronics Engineering (JIEEE)</strong> following a rigorous peer-review process.</p>
-                <div class="pt-4 border-t border-white/10 text-xs font-bold uppercase tracking-widest text-accent-yellow">
-                    Hybrid Presentation Mode Available
-                </div>
+                
             </div>
         </div>
     </div>
@@ -255,7 +286,6 @@
                     <span class="font-bold text-gray-500">Registration Fee</span>
                     <span class="text-2xl font-black text-primary-blue dark:text-accent-yellow">₹1500</span>
                 </div>
-                <p class="text-xs font-bold text-blue-600 uppercase tracking-widest">20% Discount for CSI members</p>
                 <ol class="space-y-4 text-sm text-gray-600 dark:text-gray-400">
                     <li class="flex gap-4">
                         <span class="w-6 h-6 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center flex-shrink-0 text-[10px] font-black">1</span>

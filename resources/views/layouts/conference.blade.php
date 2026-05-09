@@ -78,8 +78,8 @@
 
             <!-- Center: Conference Details -->
             <div class="flex-1 text-center space-y-4 px-4 border-y lg:border-y-0 lg:border-x border-gray-100 dark:border-slate-700 py-8 lg:py-0 transition-colors duration-300">
-                <h2 class="text-md md:text-2xl font-bold text-primary-blue dark:text-blue-400">{{ $settings['hero_subtitle'] ?? '2026 INTERNATIONAL CONFERENCE' }}</h2>
-                <p class="text-xs md:text-lg font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-widest">on</p>
+                <h2 class="text-xl md:text-4xl font-black text-primary-blue dark:text-white leading-tight">{{ $settings['hero_subtitle'] ?? '2026 INTERNATIONAL CONFERENCE' }}</h2>
+                <p class="text-xl md:text-4xl font-black text-primary-blue dark:text-white leading-tight">on</p>
                 <h1 class="text-xl md:text-4xl font-black text-primary-blue dark:text-white leading-tight">{{ $settings['hero_title'] ?? 'EMERGING TECHNOLOGIES AND ITS APPLICATIONS (ICETA)' }}</h1>
                 <p class="text-sm md:text-xl font-bold text-primary-blue dark:text-accent-yellow mt-2">17th - 18th July 2026</p>
                 
@@ -95,11 +95,9 @@
                 <div class="flex gap-4 md:gap-6 items-center">
                     <div class="text-center group">
                         <img src="{{ asset('assets/images/logo/csi.png') }}" alt="CSI Logo" class="h-14 md:h-24 object-contain transition-transform group-hover:scale-105 duration-300">
-                        <p class="text-[8px] md:text-[9px] font-bold text-gray-400 uppercase mt-1 dark:text-gray-500">CSI</p>
                     </div>
                     <div class="text-center group">
                         <img src="{{ asset('assets/images/logo/a2z.png') }}" alt="A2Z Logo" class="h-14 md:h-24 object-contain transition-transform group-hover:scale-105 duration-300">
-                        <p class="text-[8px] md:text-[9px] font-bold text-gray-400 uppercase mt-1 dark:text-gray-500">A2Z Infra</p>
                     </div>
                 </div>
 

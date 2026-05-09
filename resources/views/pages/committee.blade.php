@@ -91,15 +91,17 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
-                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Prof. (Dr.) J.P Panday</h3>
-                        <p class="text-gray-500 text-sm italic">Vice Chancellor, AKTU</p>
+                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Mr. K.K Dewan
+</h3>
+                        <p class="text-gray-500 text-sm italic">Registrar</p>
                     </div>
                     <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
-                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Shri. Vidit Jain</h3>
-                        <p class="text-gray-500 text-sm italic">Chairman-NITRA Council of Admin</p>
+                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Dr. A.P Srivastava</h3>
+                        <p class="text-gray-500 text-sm italic">Head of Department (CSE)</p>
                     </div>
                 </div>
             </div>
+
 
         </section>
             @foreach($committees as $category => $members)

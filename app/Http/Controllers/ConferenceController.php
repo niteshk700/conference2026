@@ -207,6 +207,7 @@ class ConferenceController extends Controller
             'Certificate Distribution Committee' => collect([
                 (object)['name' => 'Ms. Akansha Rajput', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
                 (object)['name' => 'Mr. Mohd Shahanawaz', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. Rakesh Kumar', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
                 (object)['name' => 'Mr. Rohitash Kumar', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
                 (object)['name' => 'Students Volunteers', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
             ]),
