@@ -15,7 +15,7 @@ class AdminSeeder extends Seeder
     {
         // Settings
         Setting::updateOrCreate(['key' => 'marquee_text'], ['value' => 'Welcome to ICETA-2026. Submit your abstract before May 25, 2026. Hybrid mode conference on July 17-18, 2026.']);
-        Setting::updateOrCreate(['key' => 'view_count'], ['value' => '1000']);
+        Setting::updateOrCreate(['key' => 'view_count'], ['value' => '1']);
         Setting::updateOrCreate(['key' => 'hero_title'], ['value' => 'Emerging Technologies & its Applications']);
         Setting::updateOrCreate(['key' => 'hero_subtitle'], ['value' => 'International Conference on']);
         Setting::updateOrCreate(['key' => 'conference_overview'], ['value' => 'The International Conference on Emerging Technologies and its Applications (ICETA-2026) aims to bring together academicians, researchers, industry experts, and innovators to exchange knowledge and insights on the latest advancements in emerging technologies.']);
