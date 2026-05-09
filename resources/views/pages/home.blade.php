@@ -300,6 +300,15 @@
                         <span>Upload payment confirmation screenshot in the form.</span>
                     </li>
                 </ol>
+
+                <!-- Quick QR Payment -->
+                <div class="pt-6 border-t dark:border-slate-800 text-center">
+                    <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-4 text-left">Quick UPI Payment</p>
+                    <div class="bg-gray-50 dark:bg-slate-800 p-3 rounded-xl inline-block border border-gray-100 dark:border-slate-700">
+                        <img src="{{ asset('qr.png') }}" alt="Payment QR" class="w-24 h-24 object-contain">
+                    </div>
+                    <p class="text-[9px] font-bold text-gray-500 mt-2">Scan with GPay, PhonePe or Paytm</p>
+                </div>
             </div>
         </div>
     </div>

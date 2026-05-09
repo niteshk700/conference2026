@@ -86,7 +86,7 @@
             <p class="text-gray-500 text-sm mt-4 font-bold uppercase tracking-widest">Select one of the following bank options for registration fee payment</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <!-- Option 1: SBI -->
             <div class="bg-white dark:bg-slate-900 p-10 rounded-[2.5rem] border border-gray-100 dark:border-slate-800 shadow-xl shadow-blue-900/5 relative overflow-hidden group">
                 <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
@@ -144,7 +144,27 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Option 3: QR Code -->
+            <div class="bg-white dark:bg-slate-900 p-10 rounded-[2.5rem] border border-gray-100 dark:border-slate-800 shadow-xl shadow-blue-900/5 relative overflow-hidden group text-center">
+                <div class="relative z-10">
+                    <span class="inline-block px-3 py-1 bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 font-black text-[10px] uppercase tracking-widest rounded-lg mb-6">UPI Payment</span>
+                    <h3 class="text-2xl font-black text-primary-blue dark:text-white mb-6">Scan & Pay</h3>
+                    
+                    <div class="bg-gray-50 dark:bg-slate-800 p-4 rounded-2xl mb-6 inline-block mx-auto border border-gray-100 dark:border-slate-700">
+                        <img src="{{ asset('qr.png') }}" alt="Payment QR Code" class="w-48 h-48 object-contain">
+                    </div>
+                    
+                    <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">Supported Apps</p>
+                    <div class="flex justify-center gap-4 mt-2">
+                        <span class="text-[10px] font-black text-blue-600 dark:text-blue-400">GPay</span>
+                        <span class="text-[10px] font-black text-purple-600 dark:text-purple-400">PhonePe</span>
+                        <span class="text-[10px] font-black text-cyan-600 dark:text-cyan-400">Paytm</span>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
     </div>
 </div>
 @endsection
