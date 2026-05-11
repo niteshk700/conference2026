@@ -45,34 +45,73 @@
     </div>
 
     <!-- Technical Tracks Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        @php
-            $tracks = [
-                ['id' => 'T1', 'title' => 'AI & Data Science', 'topics' => ['Artificial Intelligence & Machine Learning', 'Data Analytics & Big Data', 'Natural Language Processing', 'Computer Vision & Intelligent Systems', 'AI for Healthcare, Textile & Agriculture']],
-                ['id' => 'T2', 'title' => 'IoT, Robotics & Industry 4.0', 'topics' => ['Industrial IoT Systems & Smart Sensors', 'Robotics & Automation', 'Smart Manufacturing & Industry 4.0', 'Digital Twins & Cyber-Physical Systems', 'Autonomous Systems & Drones']],
-                ['id' => 'T3', 'title' => 'Cybersecurity & Emerging Computing', 'topics' => ['Blockchain & Digital Trust', 'Privacy & Data Protection', 'Ethical Hacking & Cyber Forensics', 'Cloud, Edge & Quantum Computing', 'Cryptography & Network Security']],
-                ['id' => 'T4', 'title' => 'Sustainable & Smart Technologies', 'topics' => ['Smart Cities & Intelligent Infrastructure', 'Green Computing & Sustainable Tech', 'Energy Monitoring & Optimization', 'Disaster Prediction & Risk Management', 'Smart Transportation & Mobility']]
-            ];
-        @endphp
-
-        @foreach($tracks as $track)
-        <div class="bg-white dark:bg-slate-900/40 p-10 rounded-[2rem] border border-gray-200 dark:border-slate-800 shadow-sm transition-all hover:border-accent-yellow group">
-            <div class="flex items-center justify-between mb-6">
-                <span class="px-3 py-1 bg-blue-600 text-white rounded-lg text-[10px] font-black italic">{{ $track['id'] }}</span>
-                <span class="text-[9px] font-black text-gray-400 uppercase tracking-[0.2em]">Conference Track</span>
-            </div>
-            <h3 class="text-xl font-black text-primary-blue dark:text-white mb-6 uppercase tracking-tight">{{ $track['title'] }}</h3>
-            <ul class="space-y-3">
-                @foreach($track['topics'] as $topic)
-                <li class="flex items-start gap-3 group/item">
-                    <span class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 group-hover/item:bg-accent-yellow transition-colors"></span>
-                    <span class="text-sm font-bold text-gray-700 dark:text-gray-300 group-hover/item:text-primary-blue dark:group-hover/item:text-white transition-colors">{{ $topic }}</span>
-                </li>
-                @endforeach
-            </ul>
+   <section class="py-20 px-8 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <h2 class="text-2xl md:text-3xl font-black text-primary-blue dark:text-white mb-4 uppercase tracking-tight">Technical Tracks</h2>
+            <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
         </div>
-        @endforeach
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Track 1 -->
+            <div class="p-10 bg-slate-50 dark:bg-slate-800 rounded-[2.5rem] border border-gray-100 dark:border-slate-700">
+                <h3 class="text-xl font-black text-primary-blue dark:text-white mb-6 uppercase tracking-tighter flex items-center gap-4">
+                    <span class="w-10 h-10 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xs">T1</span>
+                    AI & Data Science
+                </h3>
+                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400 font-medium">
+                    <li>• Machine Learning & Deep Learning</li>
+                    <li>• Data Analytics & Big Data</li>
+                    <li>• Natural Language Processing & Gen-AI</li>
+                    <li>• Computer Vision & Intelligent Systems</li>
+                    <li>• AI for Healthcare, Textile & Agriculture</li>
+                </ul>
+            </div>
+            <!-- Track 2 -->
+            <div class="p-10 bg-slate-50 dark:bg-slate-800 rounded-[2.5rem] border border-gray-100 dark:border-slate-700">
+                <h3 class="text-xl font-black text-primary-blue dark:text-white mb-6 uppercase tracking-tighter flex items-center gap-4">
+                    <span class="w-10 h-10 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xs">T2</span>
+                    IoT, Robotics & Industry 4.0
+                </h3>
+                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400 font-medium">
+                    <li>• Industrial IoT Systems & Smart Sensors</li>
+                    <li>• Robotics & Automation</li>
+                    <li>• Smart Manufacturing & Industry 4.0</li>
+                    <li>• Digital Twins & Cyber-Physical Systems</li>
+                    <li>• Autonomous Systems & Drones</li>
+                </ul>
+            </div>
+            <!-- Track 3 -->
+            <div class="p-10 bg-slate-50 dark:bg-slate-800 rounded-[2.5rem] border border-gray-100 dark:border-slate-700">
+                <h3 class="text-xl font-black text-primary-blue dark:text-white mb-6 uppercase tracking-tighter flex items-center gap-4">
+                    <span class="w-10 h-10 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xs">T3</span>
+                    Cybersecurity & Emerging Computing
+                </h3>
+                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400 font-medium">
+                    <li>• Blockchain & Digital Trust</li>
+                    <li>• Privacy & Data Protection</li>
+                    <li>• Ethical Hacking & Cyber Forensics</li>
+                    <li>• Cloud, Edge & Quantum Computing</li>
+                    <li>• Cryptography & Network Security</li>
+                </ul>
+            </div>
+            <!-- Track 4 -->
+            <div class="p-10 bg-slate-50 dark:bg-slate-800 rounded-[2.5rem] border border-gray-100 dark:border-slate-700">
+                <h3 class="text-xl font-black text-primary-blue dark:text-white mb-6 uppercase tracking-tighter flex items-center gap-4">
+                    <span class="w-10 h-10 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xs">T4</span>
+                    Sustainable & Smart Technologies
+                </h3>
+                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400 font-medium">
+                    <li>• Smart Cities & Intelligent Infrastructure</li>
+                    <li>• Green Computing & Sustainable Tech</li>
+                    <li>• Energy Monitoring & Optimization</li>
+                    <li>• Disaster Prediction & Risk Management</li>
+                    <li>• Smart Transportation & Mobility</li>
+                </ul>
+            </div>
+        </div>
     </div>
+</section>
 <br>
     <!-- High-Contrast Publication Banner -->
     <div class="mt-20 bg-primary-blue dark:bg-black p-10 md:p-16 rounded-[3rem] text-center border border-white/10 shadow-2xl shadow-blue-900/20">

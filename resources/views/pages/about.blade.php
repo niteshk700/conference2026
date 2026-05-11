@@ -49,7 +49,7 @@
         <div class="order-2 lg:order-1 bg-primary-blue text-white p-12 rounded-[3rem] shadow-2xl shadow-blue-900/40">
             <h3 class="text-xl font-bold text-accent-yellow mb-6 uppercase tracking-widest">Institutional Heritage</h3>
             <div class="space-y-6 text-sm md:text-base leading-relaxed text-blue-100">
-                <p>NITRA Technical Campus (NTC), Ghaziabad, is the academic arm of the Northern India Textile Research Association (NITRA), a premier institute established in 1974 by the Government of India and the textile industry.</p>
+                <p>NITRA Technical Campus (NTC), Ghaziabad, is the academic wing of the Northern India Textile Research Association (NITRA), a premier institute established in 1974 by the Government of India and the textile industry.</p>
                 <p>NTC is approved by the AICTE and is affiliated with Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow.</p>
                 <p>The campus promotes interdisciplinary learning, skill development, and real-world exposure, aiming to nurture competent professionals with strong ethical values and a commitment to technological advancement.</p>
             </div>
