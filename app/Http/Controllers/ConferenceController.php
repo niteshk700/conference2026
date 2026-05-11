@@ -104,7 +104,7 @@ class ConferenceController extends Controller
             (object)['name' => 'Dr. Avadhesh Kumar Gupta', 'affiliation' => 'IILM University, Greater Noida'],
             (object)['name' => 'Dr. Sandeep Poddar', 'affiliation' => 'Lincoln University College, Malaysia'],
             (object)['name' => 'Prof. Kumud Saxena', 'affiliation' => 'Lloyd Institute of Engineering and Technology'],
-            (object)['name' => 'Dr. Manoj Sharma', 'affiliation' => 'Bio-statistics Professional, California, USA'],
+            (object)['name' => 'Dr. Manoj Sharma', 'affiliation' => 'Biostatistics Professional instead of statistics'],
             (object)['name' => 'Dr. Ankit Vidyarthi', 'affiliation' => 'Jaypee Institute of Information Technology, Noida'],
             (object)['name' => 'Mr. Saurabh Saxena', 'affiliation' => 'AwareBase Corp, Canada'],
         ]);
@@ -113,7 +113,7 @@ class ConferenceController extends Controller
         $committees = collect([
             'Advisory Committee' => collect([
                 (object)['name' => 'Dr. Sandeep Poddar', 'affiliation' => 'Lincoln University College, Malaysia'],
-                (object)['name' => 'Dr. Manoj Sharma', 'affiliation' => 'Istatistics Professional, California, USA'],
+                (object)['name' => 'Dr. Manoj Sharma', 'affiliation' => 'Biostatistics Professional instead of statistics'],
                 (object)['name' => 'Prof. (Dr.) Mirela Blaga', 'affiliation' => 'Gheorghe Asachi din Iasi, Romania'],
                 (object)['name' => 'Mr. Saurabh Saxena', 'affiliation' => 'AwareBase Corp, Canada'],
                 (object)['name' => 'Mr. Tara Shanker', 'affiliation' => 'Ministry of Electronics & Information Technology (MeitY), Govt. of India'],
