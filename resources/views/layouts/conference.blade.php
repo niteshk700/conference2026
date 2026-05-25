@@ -16,32 +16,28 @@
 </head>
 <body class="bg-slate-50 dark:bg-slate-900 font-['Inter'] transition-colors duration-300">
     <!-- Marquee Announcement -->
-    @if($marquees->isNotEmpty())
     <div class="bg-primary-blue dark:bg-slate-900 text-white py-2.5 overflow-hidden whitespace-nowrap sticky top-0 z-[100] shadow-2xl border-b border-white/10 group">
         <div class="inline-block animate-marquee font-bold text-[10px] md:text-xs uppercase tracking-[0.2em] px-4">
-            @foreach($marquees as $mq)
-                @if($mq->url)
-                    <a href="{{ $mq->url }}" {!! str_starts_with($mq->url, 'http') ? 'target="_blank"' : '' !!} class="hover:text-accent-yellow transition-colors duration-300">
-                        {{ $mq->text }}
-                    </a>
-                @else
-                    <span>{{ $mq->text }}</span>
-                @endif
-                <span class="mx-12 text-white/20">|</span>
-            @endforeach
-            <!-- Seamless transition spacer -->
+            <span>Abstract Submission Deadline: <strike style="color: red; font-size: .9em;">25 May 2026</strike> 05 June 2026</span>
+            <span class="mx-12 text-white/20">|</span>
+            <span>Notification of Acceptance: <strike style="color: red; font-size: .9em;">30 May 2026</strike> 7th June 2026</span>
+            <span class="mx-12 text-white/20">|</span>
+            <span>Full Paper Submission Deadline: 10 June 2026</span>
+            <span class="mx-12 text-white/20">|</span>
+            <span>Registration Deadline: 15 June 2026</span>
+            <span class="mx-12 text-white/20">|</span>
+            <span>Conference Dates: 17th - 18th July 2026</span>
             <span class="mx-12 text-white/20">|</span>
             <!-- Repeat for seamless loop -->
-            @foreach($marquees as $mq)
-                @if($mq->url)
-                    <a href="{{ $mq->url }}" {!! str_starts_with($mq->url, 'http') ? 'target="_blank"' : '' !!} class="hover:text-accent-yellow transition-colors duration-300">
-                        {{ $mq->text }}
-                    </a>
-                @else
-                    <span>{{ $mq->text }}</span>
-                @endif
-                <span class="mx-12 text-white/20">|</span>
-            @endforeach
+            <span>Abstract Submission Deadline: <strike style="color: red; font-size: .9em;">25 May 2026</strike> 05 June 2026</span>
+            <span class="mx-12 text-white/20">|</span>
+            <span>Notification of Acceptance: <strike style="color: red; font-size: .9em;">30 May 2026</strike> 7th June 2026</span>
+            <span class="mx-12 text-white/20">|</span>
+            <span>Full Paper Submission Deadline: 10 June 2026</span>
+            <span class="mx-12 text-white/20">|</span>
+            <span>Registration Deadline: 15 June 2026</span>
+            <span class="mx-12 text-white/20">|</span>
+            <span>Conference Dates: 17th - 18th July 2026</span>
             <span class="mx-12 text-white/20">|</span>
         </div>
     </div>
@@ -58,7 +54,6 @@
             animation-play-state: paused;
         }
     </style>
-    @endif
 
     <!-- Academic Header Section -->
     <header class="bg-white dark:bg-slate-800 border-b border-gray-100 dark:border-slate-700 py-6 px-4 md:px-8 transition-colors duration-300">

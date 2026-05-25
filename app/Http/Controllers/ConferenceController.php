@@ -16,8 +16,8 @@ class ConferenceController extends Controller
         return [
             // Marquee announcements at the top
             'marquees' => collect([
-                (object)['text' => 'Abstract Submission Deadline: 25 May 2026', 'url' => '#'],
-                (object)['text' => 'Notification of Acceptance: 30 May 2026', 'url' => '#'],
+                (object)['text' => 'Abstract Submission Deadline: <strike>25 May 2026</strike> 05 June 2026', 'url' => '#'],
+                (object)['text' => 'Notification of Acceptance: <strike>30 May 2026</strike> 7th June 2026', 'url' => '#'],
                 (object)['text' => 'Full Paper Submission Deadline: 10 June 2026', 'url' => '#'],
                 (object)['text' => 'Registration Deadline: 15 June 2026', 'url' => '#'],
                 (object)['text' => 'Conference Dates: 17th - 18th July 2026', 'url' => '#'],
@@ -60,8 +60,8 @@ class ConferenceController extends Controller
         Setting::where('key', 'view_count')->increment('value');
 
         $dates = collect([
-            (object)['date_value' => '25 May 2026', 'label' => 'Abstract Submission', 'is_highlighted' => false],
-            (object)['date_value' => '30 May 2026', 'label' => 'Acceptance Notification', 'is_highlighted' => false],
+            (object)['date_value' => '<strike style="color: red; font-size: .9em;">25 May 2026</strike> 05 June 2026', 'label' => 'Abstract Submission', 'is_highlighted' => false],
+            (object)['date_value' => '<strike style="color: red; font-size: .9em;">30 May 2026</strike> 7th June 2026', 'label' => 'Acceptance Notification', 'is_highlighted' => false],
             (object)['date_value' => '10 June 2026', 'label' => 'Full Paper Submission', 'is_highlighted' => true],
             (object)['date_value' => '15 June 2026', 'label' => 'Registration Deadline', 'is_highlighted' => false],
             (object)['date_value' => '17-18 July 2026', 'label' => 'Conference Dates', 'is_highlighted' => true],

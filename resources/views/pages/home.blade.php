@@ -274,7 +274,7 @@
                 @foreach($dates as $item)
                 <div class="flex items-center justify-between p-2 rounded-1xl {{ $item->is_highlighted ? 'bg-blue-600 text-white shadow-xl shadow-blue-900/20' : 'bg-slate-50 dark:bg-slate-900 border border-gray-100 dark:border-slate-800' }}">
                     <span class="text-sm font-black uppercase tracking-widest">{{ $item->label }}</span>
-                    <span class="font-bold {{ $item->is_highlighted ? 'text-accent-yellow' : 'text-primary-blue dark:text-blue-400' }}">{{ $item->date_value }}</span>
+                    <span class="font-bold {{ $item->is_highlighted ? 'text-accent-yellow' : 'text-primary-blue dark:text-blue-400' }}">{!! $item->date_value !!}</span>
                 </div>
                 @endforeach
             </div>
