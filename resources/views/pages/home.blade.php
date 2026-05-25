@@ -23,7 +23,7 @@
         <div class="flex flex-col md:flex-row justify-center gap-6 mb-12">
             <div class="bg-white/5 backdrop-blur-xl px-10 py-6 rounded-2xl border border-white/10">
                 <p class="text-accent-yellow text-[10px] uppercase font-black tracking-widest mb-2">Conference Dates</p>
-                <p class="text-xl font-black italic">17th - 18th July 2026</p>
+                <p class="text-xl font-black italic">17<sup>th</sup> - 18<sup>th</sup> July 2026</p>
             </div>
             <div class="bg-white/5 backdrop-blur-xl px-10 py-6 rounded-2xl border border-white/10">
                 <p class="text-accent-yellow text-[10px] uppercase font-black tracking-widest mb-2">Venue</p>
