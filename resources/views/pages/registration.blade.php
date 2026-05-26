@@ -53,12 +53,14 @@
                 <h2 class="text-2xl font-black text-primary-blue dark:text-white uppercase tracking-tight mb-10">Important Deadlines</h2>
                 <div class="bg-slate-50 dark:bg-slate-900 p-10 rounded-[2.5rem] border border-gray-100 dark:border-slate-800">
                     <div class="space-y-8">
-                        @foreach($dates as $item)
                         <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
-                            <span class="text-[10px] font-black uppercase tracking-widest text-gray-400">{{ $item->label }}</span>
-                            <span class="text-lg font-black {{ $item->is_highlighted ? 'text-blue-600 dark:text-accent-yellow' : 'text-primary-blue dark:text-white' }}">{{ $item->date_value }}</span>
+                            <span class="text-[10px] font-black uppercase tracking-widest text-gray-400">Registration Deadline</span>
+                            <span class="text-lg font-black text-blue-600 dark:text-accent-yellow">15<sup>th</sup> June 2026</span>
                         </div>
-                        @endforeach
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+                            <span class="text-[10px] font-black uppercase tracking-widest text-gray-400">Conference Dates</span>
+                            <span class="text-lg font-black text-primary-blue dark:text-white">17<sup>th</sup> - 18<sup>th</sup> July 2026</span>
+                        </div>
                         <div class="pt-8 border-t border-gray-200 dark:border-slate-800 text-[10px] font-bold text-gray-500 uppercase tracking-widest leading-relaxed">
                             Registration is mandatory for paper presenters and attendees. Late applications will not be entertained.
                         </div>
