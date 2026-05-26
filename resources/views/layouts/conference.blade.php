@@ -150,7 +150,7 @@
                 <p class="text-gray-300 leading-relaxed text-sm md:text-base">Sector-23, Raj Nagar, Ghaziabad, Uttar Pradesh, India</p>
                 <div class="space-y-2 text-sm text-gray-400">
                     <p>Phone: 0120-2807390-95</p>
-                    <p>Email: confrence2026@nitra.ac.in</p>
+                    <p>Email: conference2026@nitra.ac.in</p>
                 </div>
             </div>
             <div class="space-y-4">
