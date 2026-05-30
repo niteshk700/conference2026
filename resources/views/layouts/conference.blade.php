@@ -227,5 +227,191 @@
             closeIcon.classList.toggle('hidden');
         });
     </script>
+
+    <!-- Global Premium Image Popup Modal -->
+    <style>
+      /* Custom styled styles for the download list elements */
+      .massage.list-inline-item {
+          cursor: pointer;
+          transition: all 0.3s ease;
+      }
+      .massage.list-inline-item:hover {
+          text-decoration: underline;
+          font-weight: bold;
+          color: #fff;
+      }
+      .massage.list-inline-item:hover,
+      .massage .list-inline-item:hover,
+      .massage list-inline-item:hover {
+          font-weight: 900;
+      }
+
+      /* Glassmorphic Overlay */
+      .popup-overlay {
+          position: fixed;
+          inset: 0;
+          background: rgba(15, 23, 42, 0.75); /* Modern deep slate with opacity */
+          backdrop-filter: blur(8px); /* Sleek backdrop blur */
+          -webkit-backdrop-filter: blur(8px);
+          display: none;
+          align-items: center;
+          justify-content: center;
+          z-index: 99999; /* Higher than sticky headers (z-50) */
+          animation: popupFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      /* Popup Container Card */
+      .popup-content {
+          position: relative;
+          background: #ffffff;
+          padding: 16px;
+          border-radius: 24px; /* Premium smooth rounded corners */
+          max-width: 500px;
+          width: 90%;
+          max-height: 90vh;
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); /* High depth shadow */
+          animation: popupScaleIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); /* Elegant bounce entrance */
+          overflow-y: auto;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* Image within Popup */
+      .popup-content img {
+          display: block;
+          width: 100%;
+          max-height: 60vh;
+          object-fit: contain;
+          border-radius: 16px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+          transition: transform 0.5s ease;
+      }
+      .popup-content img:hover {
+          transform: scale(1.02); /* Interactive micro-animation */
+      }
+
+      /* Circular Close Button with rotation effect */
+      .popup-close {
+          position: absolute;
+          top: 16px;
+          right: 16px;
+          background: #ffffff;
+          border: none;
+          font-size: 24px;
+          font-weight: 300;
+          color: #1e293b;
+          cursor: pointer;
+          border-radius: 50%;
+          width: 36px;
+          height: 36px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          z-index: 10;
+      }
+      .popup-close:hover {
+          background: #ef4444;
+          color: #ffffff;
+          transform: rotate(90deg); /* Modern hover interaction */
+      }
+
+      /* Entry Animations */
+      @keyframes popupFadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+      }
+      @keyframes popupScaleIn {
+          from { transform: scale(0.92); opacity: 0; }
+          to { transform: scale(1); opacity: 1; }
+      }
+    </style>
+
+    <div class="popup-overlay" id="popupOverlay">
+      <div class="popup-content dark:bg-slate-900 dark:border-slate-800">
+          <button class="popup-close dark:bg-slate-800 dark:text-white dark:hover:bg-red-600" id="popupClose" aria-label="Close modal">&times;</button>
+          
+          <div class="overflow-hidden rounded-2xl mb-4">
+              <img src="https://nitra.ac.in/wp-content/uploads/2026/05/conference2026.jpeg" alt="Conference Announcement" class="w-full object-cover">
+          </div>
+
+          <div class="text-center px-2 py-1">
+              <p class="text-lg font-bold text-slate-800 dark:text-white mb-4 tracking-tight">
+                  Register now for the Conference
+              </p>
+
+              <a href="https://conference2026.nitra.ac.in/" target="_blank" class="inline-block w-full">
+                  <button class="w-full bg-blue-600 hover:bg-blue-700 active:scale-98 text-white font-bold py-3 px-8 rounded-xl shadow-lg shadow-blue-500/20 transition-all duration-300">
+                      Register Now
+                  </button>
+              </a>
+          </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const overlay = document.getElementById("popupOverlay");
+        const popupClose = document.getElementById("popupClose");
+
+        // Auto open popup when load event fires (or fallback if already loaded)
+        const showPopup = () => {
+          overlay.style.display = "flex";
+        };
+
+        if (document.readyState === "complete") {
+          showPopup();
+        } else {
+          window.addEventListener("load", showPopup);
+        }
+
+        // Close popup on button click
+        popupClose.addEventListener("click", () => {
+          overlay.style.display = "none";
+        });
+
+        // Close on clicking outside the content card
+        overlay.addEventListener("click", (e) => {
+          if (e.target === overlay) {
+            overlay.style.display = "none";
+          }
+        });
+
+        // Close on pressing Escape key
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") {
+            overlay.style.display = "none";
+          }
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll('.massage.list-inline-item').forEach(function (el) {
+            el.addEventListener('click', function () {
+                const imageUrl = 'https://nitratextile.org/wp-content/uploads/2025/10/Nitra-Main-Logo-1.png';
+                const fileName = 'Nitra-NTC-Logo.png';
+
+                // Temporary click effect
+                el.style.fontWeight = 'bold';
+                el.style.textDecoration = 'underline';
+
+                setTimeout(() => {
+                    el.style.fontWeight = '';
+                    el.style.textDecoration = '';
+                }, 300); // Remove effect after 0.3s
+
+                // Download logic
+                const link = document.createElement('a');
+                link.href = imageUrl;
+                link.download = fileName;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        });
+      });
+    </script>
 </body>
 </html>
