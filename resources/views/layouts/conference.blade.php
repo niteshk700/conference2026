@@ -340,7 +340,7 @@
                   Register now for the Conference
               </p>
 
-              <a href="https://conference2026.nitra.ac.in/" target="_blank" class="inline-block w-full">
+              <a href="https://conference2026.nitra.ac.in/paper-submission" target="_blank" class="inline-block w-full">
                   <button class="w-full bg-blue-600 hover:bg-blue-700 active:scale-98 text-white font-bold py-3 px-8 rounded-xl shadow-lg shadow-blue-500/20 transition-all duration-300">
                       Register Now
                   </button>

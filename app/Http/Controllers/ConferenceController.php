@@ -166,6 +166,7 @@ class ConferenceController extends Controller
             'Editorial Committee' => collect([
                 (object)['name' => 'Mr. K K Dewan', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
                 (object)['name' => 'Dr. A.P. Srivastava', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
+                (object)['name' => 'Mr. Partha Basu', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
                 (object)['name' => 'Mr. R C Yadaw', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
                 (object)['name' => 'Dr. Rajesh', 'affiliation' => 'NITRA Technical Campus, Ghaziabad'],
             ]),
