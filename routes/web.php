@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [ConferenceController::class, 'home'])->name('home');
 Route::get('/about', [ConferenceController::class, 'about'])->name('about');
 Route::get('/committee', [ConferenceController::class, 'committee'])->name('committee');
+Route::get('/advisory-committee', [ConferenceController::class, 'advisoryCommittee'])->name('advisory-committee');
 Route::get('/call-for-paper', [ConferenceController::class, 'callForPaper'])->name('call-for-paper');
 Route::get('/paper-submission', [ConferenceController::class, 'paperSubmission'])->name('paper-submission');
 Route::get('/registration', [ConferenceController::class, 'registration'])->name('registration');

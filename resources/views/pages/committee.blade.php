@@ -33,92 +33,7 @@
 
         <!-- Proper Table Content -->
 <main class="w-full lg:w-3/4 xl:w-4/5 space-y-16 md:space-y-24">
-    <section class="py-10 px-4 bg-slate-50 dark:bg-slate-950">
-        <div class="max-w-7xl mx-auto">
-            <!-- Chief Patrons Section -->
-            <div class="mb-12">
-                <div class="text-center mb-4">
-                    <h2 class="text-xl md:text-2xl font-black text-primary-blue dark:text-white mb-2 uppercase tracking-tight">Chief Patrons</h2>
-                    <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center flex flex-col items-center">
-                        <div class="w-24 h-24 rounded-full overflow-hidden mb-2 border-2 border-slate-100 dark:border-slate-700 shadow-md bg-slate-50 dark:bg-slate-850 flex items-center justify-center transition-transform duration-300 hover:scale-105">
-                            <img src="{{ asset('assets/images/Prof. (Dr.) J.P Panday.jpg') }}" alt="Prof. (Dr.) J.P Panday" class="w-full h-full object-cover object-top">
-                        </div>
-                        <h3 class="text-base font-black text-primary-blue dark:text-white mb-1">Prof. (Dr.) J.P Panday</h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-[10px] italic">Vice Chancellor, AKTU</p>
-                    </div>
-                    <div class="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center flex flex-col items-center">
-                        <div class="w-24 h-24 rounded-full overflow-hidden mb-2 border-2 border-slate-100 dark:border-slate-700 shadow-md bg-slate-50 dark:bg-slate-850 flex items-center justify-center transition-transform duration-300 hover:scale-105">
-                            <img src="{{ asset('assets/images/Shri. Vidit Jain.png') }}" alt="Shri. Vidit Jain" class="w-full h-full object-cover object-top">
-                        </div>
-                        <h3 class="text-base font-black text-primary-blue dark:text-white mb-1">Shri. Vidit Jain</h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-[10px] italic">Chairman-NITRA Council of Admin</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Patron & Convener Section -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4 mt-4 mb-12">
-                <!-- Patron -->
-                <div class="space-y-2">
-                    <div class="text-center">
-                        <h2 class="text-xl md:text-2xl font-black text-primary-blue dark:text-white mb-1 uppercase tracking-tight">Patron</h2>
-                        <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
-                    </div>
-                    <div class="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center flex flex-col items-center">
-                        <div class="w-24 h-24 rounded-full overflow-hidden mb-2 border-2 border-slate-100 dark:border-slate-700 shadow-md bg-slate-50 dark:bg-slate-850 flex items-center justify-center transition-transform duration-300 hover:scale-105">
-                            <img src="{{ asset('assets/images/Dr. M.S. Parmar.png') }}" alt="Dr. M.S. Parmar" class="w-full h-full object-cover object-top">
-                        </div>
-                        <h3 class="text-base font-black text-primary-blue dark:text-white mb-1">Dr. M.S. Parmar</h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-[10px] italic">Director General, NITRA</p>
-                    </div>
-                </div>
-
-                <!-- Convener -->
-                <div class="space-y-2">
-                    <div class="text-center">
-                        <h2 class="text-xl md:text-2xl font-black text-primary-blue dark:text-white mb-1 uppercase tracking-tight">Convener</h2>
-                        <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
-                    </div>
-                    <div class="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center flex flex-col items-center">
-                        <div class="w-24 h-24 rounded-full overflow-hidden mb-2 border-2 border-slate-100 dark:border-slate-700 shadow-md bg-slate-50 dark:bg-slate-850 flex items-center justify-center transition-transform duration-300 hover:scale-105">
-                            <img src="{{ asset('assets/images/Dr. B.K Sharma.png') }}" alt="Dr. B.K Sharma" class="w-full h-full object-cover object-top">
-                        </div>
-                        <h3 class="text-base font-black text-primary-blue dark:text-white mb-1">Dr. B.K Sharma</h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-[10px] italic">Director, NTC</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Coordinators Section -->
-        <div class="space-y-1 mt-4" style="padding-block:20px">
-            <div class="text-center mb-4">
-                <h2 class="text-xl md:text-2xl font-black text-primary-blue dark:text-white mb-2 uppercase tracking-tight">Coordinators</h2>
-                <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center flex flex-col items-center">
-                    <div class="w-24 h-24 rounded-full overflow-hidden mb-2 border-2 border-slate-100 dark:border-slate-700 shadow-md bg-slate-50 dark:bg-slate-850 flex items-center justify-center transition-transform duration-300 hover:scale-105">
-                        <img src="{{ asset('assets/images/k k dewan.jpeg') }}" alt="Mr. K.K Dewan" class="w-full h-full object-cover object-top">
-                    </div>
-                    <h3 class="text-base font-black text-primary-blue dark:text-white mb-1">Mr. K.K Dewan</h3>
-                    <p class="text-gray-500 dark:text-gray-400 text-[10px] italic">Registrar</p>
-                </div>
-                <div class="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center flex flex-col items-center">
-                    <div class="w-24 h-24 rounded-full overflow-hidden mb-2 border-2 border-slate-100 dark:border-slate-700 shadow-md bg-slate-50 dark:bg-slate-850 flex items-center justify-center transition-transform duration-300 hover:scale-105">
-                        <img src="{{ asset('assets/images/Dr.-Anand-P.-Srivastava (1).png') }}" alt="Dr. A.P Srivastava" class="w-full h-full object-cover object-top">
-                    </div>
-                    <h3 class="text-base font-black text-primary-blue dark:text-white mb-1">Dr. A.P Srivastava</h3>
-                    <p class="text-gray-500 dark:text-gray-400 text-[10px] italic">Head of Department (CSE)</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    
             @foreach($committees as $category => $members)
             <section id="{{ str($category)->slug() }}" class="scroll-mt-16 md:scroll-mt-16" style="padding-block:10px;margin-top: 0px;" >
                 <div class="flex items-center gap-4 mb-2 md:mb-8">
@@ -130,19 +45,26 @@
                     <table class="w-full text-left border-collapse min-w-[500px] md:min-w-0">
                         <thead>
                             <tr class="bg-primary-blue dark:bg-slate-800 text-white border-b border-primary-blue dark:border-slate-700">
-                                <th class="py-4 md:py-5 px-6 md:px-8 text-[10px] md:text-[11px] font-black uppercase tracking-widest w-[40%] md:w-1/3 border-r border-white/10">Member Name</th>
-                                <th class="py-4 md:py-5 px-6 md:px-8 text-[10px] md:text-[11px] font-black uppercase tracking-widest">Organization / Affiliation</th>
+                                <th class="py-4 md:py-5 px-6 md:px-8 text-[10px] md:text-[11px] font-black uppercase tracking-widest w-[50%] border-r border-white/10">Member Name</th>
+                                <th class="py-4 md:py-5 px-6 md:px-8 text-[10px] md:text-[11px] font-black uppercase tracking-widest w-[50%]">Member Name</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-100 dark:divide-slate-800">
-                            @foreach($members as $member)
+                            @php $chunks = $members->chunk(2); @endphp
+                            @foreach($chunks as $pair)
                             <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors even:bg-slate-50/50 dark:even:bg-slate-900/50">
+                                {{-- First member --}}
                                 <td class="py-4 px-6 md:px-8 text-sm font-bold text-gray-800 dark:text-gray-200 border-r border-gray-200 dark:border-slate-800 leading-tight">
-                                    {{ $member->name }}
+                                    {{ $pair->first()->name }}
                                 </td>
-                                <td class="py-4 px-6 md:px-8 text-[11px] md:text-xs font-semibold text-gray-600 dark:text-gray-400 italic leading-relaxed">
-                                    {{ $member->affiliation }}
+                                {{-- Second member --}}
+                                @if($pair->count() > 1)
+                                <td class="py-4 px-6 md:px-8 text-sm font-bold text-gray-800 dark:text-gray-200 leading-tight">
+                                    {{ $pair->last()->name }}
                                 </td>
+                                @else
+                                <td class="py-4 px-6 md:px-8"></td>
+                                @endif
                             </tr>
                             @endforeach
                         </tbody>

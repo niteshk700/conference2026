@@ -427,6 +427,68 @@
         </div>
     </div>
 </section>
+
+{{-- Advisory Committee Section --}}
+<section class="py-12 px-4 bg-white dark:bg-slate-900 border-t border-gray-100 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto">
+        {{-- Header --}}
+        <div class="text-center mb-8">
+            <span class="inline-block px-3 py-1 bg-accent-yellow/20 dark:bg-accent-yellow/10 text-primary-blue dark:text-accent-yellow font-black text-[10px] tracking-[0.3em] mb-2 rounded-full border border-accent-yellow/30">ICETA-2026</span>
+            <h2 class="text-2xl md:text-3xl font-black text-primary-blue dark:text-white tracking-tight">Advisory Committee</h2>
+            <div class="w-20 h-1.5 bg-accent-yellow mx-auto mt-2"></div>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-3">Distinguished advisors providing strategic and scholarly direction to the conference</p>
+        </div>
+
+        {{-- 4-Column Table: Name | Affiliation | Name | Affiliation --}}
+        <div class="overflow-x-auto rounded-2xl border border-gray-200 dark:border-slate-800 shadow-xl shadow-blue-900/5">
+            <table class="w-full text-left border-collapse min-w-[700px]">
+                <thead>
+                    <tr class="bg-primary-blue dark:bg-slate-800 text-white">
+                        <th class="py-3 px-4 text-[10px] font-black uppercase tracking-widest border-r border-white/10 w-[25%]">Member Name</th>
+                        <th class="py-3 px-4 text-[10px] font-black uppercase tracking-widest border-r border-white/20 w-[25%]">Organization</th>
+                        <th class="py-3 px-4 text-[10px] font-black uppercase tracking-widest border-r border-white/10 w-[25%]">Member Name</th>
+                        <th class="py-3 px-4 text-[10px] font-black uppercase tracking-widest w-[25%]">Organization</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100 dark:divide-slate-800 bg-white dark:bg-slate-900">
+                    @php $chunks = $advisoryMembers->chunk(2); @endphp
+                    @foreach($chunks as $pair)
+                    <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors even:bg-slate-50/50 dark:even:bg-slate-900/50">
+                        {{-- Left member --}}
+                        <td class="py-3 px-4 text-sm font-bold text-gray-800 dark:text-gray-200 border-r border-gray-100 dark:border-slate-800 leading-tight">
+                            {{ $pair->first()->name }}
+                        </td>
+                        <td class="py-3 px-4 text-[11px] font-semibold text-gray-500 dark:text-gray-400 italic leading-relaxed border-r border-gray-200 dark:border-slate-700">
+                            {{ $pair->first()->affiliation }}
+                        </td>
+                        {{-- Right member --}}
+                        @if($pair->count() > 1)
+                        <td class="py-3 px-4 text-sm font-bold text-gray-800 dark:text-gray-200 border-r border-gray-100 dark:border-slate-800 leading-tight">
+                            {{ $pair->last()->name }}
+                        </td>
+                        <td class="py-3 px-4 text-[11px] font-semibold text-gray-500 dark:text-gray-400 italic leading-relaxed">
+                            {{ $pair->last()->affiliation }}
+                        </td>
+                        @else
+                        <td class="py-3 px-4 border-r border-gray-100 dark:border-slate-800"></td>
+                        <td class="py-3 px-4"></td>
+                        @endif
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+
+        {{-- View full page link --}}
+        <div class="mt-6 text-center">
+            <a href="{{ route('advisory-committee') }}" class="inline-flex items-center gap-2 text-sm font-bold text-primary-blue dark:text-accent-yellow hover:underline uppercase tracking-wider transition-all">
+                View Full Advisory Committee Page
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
 <!-- About Sections -->
 <section class="py-10 px-4 max-w-7xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
