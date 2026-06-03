@@ -228,6 +228,7 @@
         });
     </script>
 
+    @if(request()->routeIs('home') || Request::is('/') || Request::is('home'))
     <!-- Global Premium Image Popup Modal -->
     <style>
       /* Custom styled styles for the download list elements */
@@ -354,9 +355,23 @@
         const overlay = document.getElementById("popupOverlay");
         const popupClose = document.getElementById("popupClose");
 
+        const CACHE_KEY = 'iceta_popup_last_shown';
+        const ONE_HOUR = 60 * 60 * 1000; // in milliseconds
+
+        const shouldShowPopup = () => {
+          const lastShown = localStorage.getItem(CACHE_KEY);
+          if (!lastShown) return true;
+          
+          const now = new Date().getTime();
+          return (now - parseInt(lastShown, 10)) > ONE_HOUR;
+        };
+
         // Auto open popup when load event fires (or fallback if already loaded)
         const showPopup = () => {
-          overlay.style.display = "flex";
+          if (shouldShowPopup()) {
+            overlay.style.display = "flex";
+            localStorage.setItem(CACHE_KEY, new Date().getTime().toString());
+          }
         };
 
         if (document.readyState === "complete") {
@@ -385,6 +400,7 @@
         });
       });
     </script>
+    @endif
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {

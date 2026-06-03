@@ -33,79 +33,94 @@
 
         <!-- Proper Table Content -->
 <main class="w-full lg:w-3/4 xl:w-4/5 space-y-16 md:space-y-24">
-    <section class="py-20 px-8 bg-slate-50 dark:bg-slate-950">
+    <section class="py-10 px-4 bg-slate-50 dark:bg-slate-950">
         <div class="max-w-7xl mx-auto">
             <!-- Chief Patrons Section -->
-            <div class="mb-24">
-                <div class="text-center mb-8">
-                    <h2 class="text-2xl md:text-3xl font-black text-primary-blue dark:text-white mb-4 uppercase tracking-tight">Chief Patrons</h2>
+            <div class="mb-12">
+                <div class="text-center mb-4">
+                    <h2 class="text-xl md:text-2xl font-black text-primary-blue dark:text-white mb-2 uppercase tracking-tight">Chief Patrons</h2>
                     <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
-                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Prof. (Dr.) J.P Panday</h3>
-                        <p class="text-gray-500 text-sm italic">Vice Chancellor, AKTU</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center flex flex-col items-center">
+                        <div class="w-24 h-24 rounded-full overflow-hidden mb-2 border-2 border-slate-100 dark:border-slate-700 shadow-md bg-slate-50 dark:bg-slate-850 flex items-center justify-center transition-transform duration-300 hover:scale-105">
+                            <img src="{{ asset('assets/images/Prof. (Dr.) J.P Panday.jpg') }}" alt="Prof. (Dr.) J.P Panday" class="w-full h-full object-cover object-top">
+                        </div>
+                        <h3 class="text-base font-black text-primary-blue dark:text-white mb-1">Prof. (Dr.) J.P Panday</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-[10px] italic">Vice Chancellor, AKTU</p>
                     </div>
-                    <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
-                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Shri. Vidit Jain</h3>
-                        <p class="text-gray-500 text-sm italic">Chairman-NITRA Council of Admin</p>
+                    <div class="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center flex flex-col items-center">
+                        <div class="w-24 h-24 rounded-full overflow-hidden mb-2 border-2 border-slate-100 dark:border-slate-700 shadow-md bg-slate-50 dark:bg-slate-850 flex items-center justify-center transition-transform duration-300 hover:scale-105">
+                            <img src="{{ asset('assets/images/Shri. Vidit Jain.png') }}" alt="Shri. Vidit Jain" class="w-full h-full object-cover object-top">
+                        </div>
+                        <h3 class="text-base font-black text-primary-blue dark:text-white mb-1">Shri. Vidit Jain</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-[10px] italic">Chairman-NITRA Council of Admin</p>
                     </div>
                 </div>
             </div>
 
             <!-- Patron & Convener Section -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4 mt-4 mb-12">
                 <!-- Patron -->
-                <div class="space-y-4">
+                <div class="space-y-2">
                     <div class="text-center">
-                        <h2 class="text-2xl md:text-3xl font-black text-primary-blue dark:text-white mb-2 uppercase tracking-tight">Patron</h2>
+                        <h2 class="text-xl md:text-2xl font-black text-primary-blue dark:text-white mb-1 uppercase tracking-tight">Patron</h2>
                         <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
                     </div>
-                    <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
-                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Dr. M.S. Parmar</h3>
-                        <p class="text-gray-500 text-sm italic">Director General, NITRA</p>
+                    <div class="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center flex flex-col items-center">
+                        <div class="w-24 h-24 rounded-full overflow-hidden mb-2 border-2 border-slate-100 dark:border-slate-700 shadow-md bg-slate-50 dark:bg-slate-850 flex items-center justify-center transition-transform duration-300 hover:scale-105">
+                            <img src="{{ asset('assets/images/Dr. M.S. Parmar.png') }}" alt="Dr. M.S. Parmar" class="w-full h-full object-cover object-top">
+                        </div>
+                        <h3 class="text-base font-black text-primary-blue dark:text-white mb-1">Dr. M.S. Parmar</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-[10px] italic">Director General, NITRA</p>
                     </div>
                 </div>
 
                 <!-- Convener -->
-                <div class="space-y-4">
+                <div class="space-y-2">
                     <div class="text-center">
-                        <h2 class="text-2xl md:text-3xl font-black text-primary-blue dark:text-white mb-2 uppercase tracking-tight">Convener</h2>
+                        <h2 class="text-xl md:text-2xl font-black text-primary-blue dark:text-white mb-1 uppercase tracking-tight">Convener</h2>
                         <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
                     </div>
-                    <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
-                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Dr. B.K Sharma</h3>
-                        <p class="text-gray-500 text-sm italic">Director, NTC</p>
+                    <div class="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center flex flex-col items-center">
+                        <div class="w-24 h-24 rounded-full overflow-hidden mb-2 border-2 border-slate-100 dark:border-slate-700 shadow-md bg-slate-50 dark:bg-slate-850 flex items-center justify-center transition-transform duration-300 hover:scale-105">
+                            <img src="{{ asset('assets/images/Dr. B.K Sharma.png') }}" alt="Dr. B.K Sharma" class="w-full h-full object-cover object-top">
+                        </div>
+                        <h3 class="text-base font-black text-primary-blue dark:text-white mb-1">Dr. B.K Sharma</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-[10px] italic">Director, NTC</p>
                     </div>
                 </div>
-
             </div>
         </div>
         
-         <div class="space-y-4" style="padding-block:20px">
-                <div class="text-center mb-8">
-                    <h2 class="text-2xl md:text-3xl font-black text-primary-blue dark:text-white mb-4 uppercase tracking-tight">Coordinators</h2>
-                    <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
-                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Mr. K.K Dewan
-</h3>
-                        <p class="text-gray-500 text-sm italic">Registrar</p>
-                    </div>
-                    <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center">
-                        <h3 class="text-xl font-black text-primary-blue dark:text-white mb-2">Dr. A.P Srivastava</h3>
-                        <p class="text-gray-500 text-sm italic">Head of Department (CSE)</p>
-                    </div>
-                </div>
+        <!-- Coordinators Section -->
+        <div class="space-y-1 mt-4" style="padding-block:20px">
+            <div class="text-center mb-4">
+                <h2 class="text-xl md:text-2xl font-black text-primary-blue dark:text-white mb-2 uppercase tracking-tight">Coordinators</h2>
+                <div class="w-20 h-1.5 bg-accent-yellow mx-auto"></div>
             </div>
 
-
-        </section>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center flex flex-col items-center">
+                    <div class="w-24 h-24 rounded-full overflow-hidden mb-2 border-2 border-slate-100 dark:border-slate-700 shadow-md bg-slate-50 dark:bg-slate-850 flex items-center justify-center transition-transform duration-300 hover:scale-105">
+                        <img src="{{ asset('assets/images/k k dewan.jpeg') }}" alt="Mr. K.K Dewan" class="w-full h-full object-cover object-top">
+                    </div>
+                    <h3 class="text-base font-black text-primary-blue dark:text-white mb-1">Mr. K.K Dewan</h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-[10px] italic">Registrar</p>
+                </div>
+                <div class="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl shadow-blue-900/5 border border-gray-100 dark:border-slate-800 text-center flex flex-col items-center">
+                    <div class="w-24 h-24 rounded-full overflow-hidden mb-2 border-2 border-slate-100 dark:border-slate-700 shadow-md bg-slate-50 dark:bg-slate-850 flex items-center justify-center transition-transform duration-300 hover:scale-105">
+                        <img src="{{ asset('assets/images/Dr.-Anand-P.-Srivastava (1).png') }}" alt="Dr. A.P Srivastava" class="w-full h-full object-cover object-top">
+                    </div>
+                    <h3 class="text-base font-black text-primary-blue dark:text-white mb-1">Dr. A.P Srivastava</h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-[10px] italic">Head of Department (CSE)</p>
+                </div>
+            </div>
+        </div>
+    </section>
             @foreach($committees as $category => $members)
-            <section id="{{ str($category)->slug() }}" class="scroll-mt-32 md:scroll-mt-36" style="padding-block:10px">
+            <section id="{{ str($category)->slug() }}" class="scroll-mt-16 md:scroll-mt-16" style="padding-block:10px;margin-top: 0px;" >
                 <div class="flex items-center gap-4 mb-2 md:mb-8">
                     <h2 class="text-lg md:text-2xl font-black text-primary-blue dark:text-white uppercase tracking-tight">{{ $category }}</h2>
                     <div class="h-px flex-1 bg-gray-100 dark:bg-slate-800"></div>
