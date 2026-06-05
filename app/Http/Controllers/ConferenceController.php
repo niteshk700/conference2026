@@ -16,7 +16,7 @@ class ConferenceController extends Controller
         return [
             // Marquee announcements at the top
             'marquees' => collect([
-                (object)['text' => 'Abstract Submission Deadline: <strike>25 May 2026</strike> 05 June 2026', 'url' => '#'],
+                (object)['text' => 'Abstract Submission Deadline: <strike>25 May 2026</strike> <strike>05 June 2026</strike> 07 June 2026', 'url' => '#'],
                 (object)['text' => 'Notification of Acceptance: <strike>30 May 2026</strike> 7th June 2026', 'url' => '#'],
                 (object)['text' => 'Full Paper Submission Deadline: 10 June 2026', 'url' => '#'],
                 (object)['text' => 'Registration Deadline: 15 June 2026', 'url' => '#'],
@@ -60,7 +60,7 @@ class ConferenceController extends Controller
         Setting::where('key', 'view_count')->increment('value');
 
         $dates = collect([
-            (object)['date_value' => '<strike style="color: red; font-size: .9em;">25<sup>th</sup> May 2026</strike> 5<sup>th</sup> June 2026', 'label' => 'Abstract Submission', 'is_highlighted' => false],
+            (object)['date_value' => '<strike style="color: red; font-size: .9em;">25<sup>th</sup> May 2026</strike> <strike style="color: red; font-size: .9em;">5<sup>th</sup> June 2026</strike> 7<sup>th</sup> June 2026', 'label' => 'Abstract Submission', 'is_highlighted' => false],
             (object)['date_value' => '<strike style="color: red; font-size: .9em;">30<sup>th</sup> May 2026</strike> 7<sup>th</sup> June 2026', 'label' => 'Acceptance Notification', 'is_highlighted' => false],
             (object)['date_value' => '10<sup>th</sup> June 2026', 'label' => 'Full Paper Submission', 'is_highlighted' => true],
             (object)['date_value' => '15<sup>th</sup> June 2026', 'label' => 'Registration Deadline', 'is_highlighted' => false],

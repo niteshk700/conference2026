@@ -18,7 +18,7 @@
     <!-- Marquee Announcement -->
     <div class="bg-primary-blue dark:bg-slate-900 text-white py-2.5 overflow-hidden whitespace-nowrap sticky top-0 z-[100] shadow-2xl border-b border-white/10 group">
         <div class="inline-block animate-marquee font-bold text-[10px] md:text-xs uppercase tracking-[0.2em] px-4">
-            <span>Abstract Submission Deadline: <strike style="color: red; font-size: .9em;">25<sup>th</sup> May 2026</strike> 5<sup>th</sup> June 2026</span>
+            <span>Abstract Submission Deadline: <strike style="color: red; font-size: .9em;">25<sup>th</sup> May 2026</strike> <strike style="color: red; font-size: .9em;">5<sup>th</sup> June 2026</strike> 7<sup>th</sup> June 2026</span>
             <span class="mx-12 text-white/20">|</span>
             <span>Notification of Acceptance: <strike style="color: red; font-size: .9em;">30<sup>th</sup> May 2026</strike> 7<sup>th</sup> June 2026</span>
             <span class="mx-12 text-white/20">|</span>
@@ -29,7 +29,7 @@
             <span>Conference Dates: 17<sup>th</sup> - 18<sup>th</sup> July 2026</span>
             <span class="mx-12 text-white/20">|</span>
             <!-- Repeat for seamless loop -->
-            <span>Abstract Submission Deadline: <strike style="color: red; font-size: .9em;">25<sup>th</sup> May 2026</strike> 5<sup>th</sup> June 2026</span>
+            <span>Abstract Submission Deadline: <strike style="color: red; font-size: .9em;">25<sup>th</sup> May 2026</strike> <strike style="color: red; font-size: .9em;">5<sup>th</sup> June 2026</strike> 7<sup>th</sup> June 2026</span>
             <span class="mx-12 text-white/20">|</span>
             <span>Notification of Acceptance: <strike style="color: red; font-size: .9em;">30<sup>th</sup> May 2026</strike> 7<sup>th</sup> June 2026</span>
             <span class="mx-12 text-white/20">|</span>
