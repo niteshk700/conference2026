@@ -18,7 +18,7 @@ class ConferenceController extends Controller
             'marquees' => collect([
                 (object)['text' => 'Abstract Submission Deadline: <strike>25 May 2026</strike> <strike>05 June 2026</strike> 07 June 2026', 'url' => '#'],
                 (object)['text' => 'Notification of Acceptance: <strike>30 May 2026</strike> 7th June 2026', 'url' => '#'],
-                (object)['text' => 'Full Paper Submission Deadline: 10 June 2026', 'url' => '#'],
+                (object)['text' => 'Full Paper Submission Deadline: <strike>10 June 2026</strike> 15 June 2026', 'url' => '#'],
                 (object)['text' => 'Registration Deadline: 15 June 2026', 'url' => '#'],
                 (object)['text' => 'Conference Dates: 17th - 18th July 2026', 'url' => '#'],
             ]),
@@ -62,7 +62,7 @@ class ConferenceController extends Controller
         $dates = collect([
             (object)['date_value' => '<strike style="color: red; font-size: .9em;">25<sup>th</sup> May 2026</strike> <strike style="color: red; font-size: .9em;">5<sup>th</sup> June 2026</strike> 7<sup>th</sup> June 2026', 'label' => 'Abstract Submission', 'is_highlighted' => false],
             (object)['date_value' => '<strike style="color: red; font-size: .9em;">30<sup>th</sup> May 2026</strike> 7<sup>th</sup> June 2026', 'label' => 'Acceptance Notification', 'is_highlighted' => false],
-            (object)['date_value' => '10<sup>th</sup> June 2026', 'label' => 'Full Paper Submission', 'is_highlighted' => true],
+            (object)['date_value' => '<strike style="color: red; font-size: .9em;">10<sup>th</sup> June 2026</strike> 15<sup>th</sup> June 2026', 'label' => 'Full Paper Submission', 'is_highlighted' => true],
             (object)['date_value' => '15<sup>th</sup> June 2026', 'label' => 'Registration Deadline', 'is_highlighted' => false],
             (object)['date_value' => '17<sup>th</sup> - 18<sup>th</sup> July 2026', 'label' => 'Conference Dates', 'is_highlighted' => true],
         ]);
@@ -141,7 +141,7 @@ class ConferenceController extends Controller
             (object)['name' => 'Prof. (Dr.) Uma Shankar Pandey', 'affiliation' => 'Delhi University'],
             (object)['name' => 'Dr. Avadhesh Kumar Gupta', 'affiliation' => 'IILM University, Greater Noida'],
             (object)['name' => 'Dr. Sandeep Poddar', 'affiliation' => 'Lincoln University College, Malaysia'],
-            (object)['name' => 'Prof. Kumud Saxena', 'affiliation' => 'Lloyd Institute of Engineering and Technology'],
+            (object)['name' => 'Dr. Kumud Saxena', 'affiliation' => 'Lloyd Institute of Engineering and Technology'],
             (object)['name' => 'Dr. Manoj Sharma', 'affiliation' => 'PhD (Statistics), Former Indian Statistical Service Officer & Biostatistics Leader (J&J, Grail, Adaptive Biotechnologies), USA'],
             (object)['name' => 'Dr. Ankit Vidyarthi', 'affiliation' => 'Jaypee Institute of Information Technology, Noida'],
             (object)['name' => 'Mr. Saurabh Saxena', 'affiliation' => 'AwareBase Corp, Canada'],

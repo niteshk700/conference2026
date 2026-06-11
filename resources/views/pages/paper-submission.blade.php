@@ -59,7 +59,7 @@
                     </div>
                     
                     <div class="space-y-4 text-sm text-gray-600 dark:text-gray-400 mb-8">
-                        <p><strong>• Font:</strong> Times New Roman, Size 12</p>
+                        <p><strong>• Font:</strong> Calibri, Size 12</p>
                         <p><strong>• Spacing:</strong> 1.5 line spacing</p>
                         <p><strong>• Margins:</strong> 1 inch on all sides</p>
                         <p class="pt-4 font-black uppercase text-[10px] text-blue-600">Suggested Structure</p>

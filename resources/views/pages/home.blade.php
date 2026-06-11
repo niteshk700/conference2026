@@ -422,7 +422,72 @@
                 </div>
             </div>
 
-           
+
+            <!-- Speaker 4: Dr. Kumud Saxena -->
+            <div class="flip-card group mx-auto">
+                <div class="flip-card-inner">
+                    <!-- Front Face -->
+                    <div class="flip-card-front shadow-2xl">
+                        <!-- Portrait Image -->
+                        <div class="relative w-60 h-72 max-w-full mx-auto overflow-hidden rounded-2xl shadow-lg border-2 border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-850">
+                            <img src="{{ asset('assets/images/speaker/Dr. Kumud Saxena.jpeg') }}" alt="Dr. Kumud Saxena" class="w-full h-full object-cover object-top transition-transform duration-75">
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary-blue/30 via-transparent to-transparent opacity-60"></div>
+                        </div>
+
+                        <!-- Details -->
+                        <div class="text-center space-y-2 py-4">
+                            <h3 class="text-xl font-black text-primary-blue dark:text-white leading-tight">Dr. Kumud Saxena</h3>
+                            <p class="text-gray-500 dark:text-gray-400 text-[10px] font-black  tracking-[0.15em]">Dean Academics, Lloyd Institute of Engineering & Technology</p>
+                            <div class="h-0.5 w-12 bg-accent-yellow mx-auto my-2"></div>
+                            
+                            <div class="flex items-center justify-center gap-2 mb-2">
+                                <span class="px-2.5 py-0.5 bg-accent-yellow/20 text-primary-blue dark:text-accent-yellow text-[8px] font-black  tracking-wider rounded border border-accent-yellow/30 shadow-sm">Keynote Address</span>
+                                <span class="px-2.5 py-0.5 bg-blue-600/10 text-blue-600 dark:text-blue-400 text-[8px] font-black  tracking-wider rounded border border-blue-600/20 shadow-sm">AI & ML</span>
+                            </div>
+
+                            <div class="flex items-center justify-center gap-1.5 text-blue-600 dark:text-accent-yellow text-[10px] font-black  tracking-widest animate-pulse pt-2">
+                                <span>Hover to see Bio</span>
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Back Face -->
+                    <div class="flip-card-back shadow-2xl">
+                        <div>
+                            <h3 class="text-accent-yellow font-black text-base  tracking-[0.15em] text-center">Dr. Kumud Saxena</h3>
+                            <p class="text-slate-400 text-[9px] font-black  tracking-[0.2em] text-center mt-1">Dean Academics, Lloyd Institute</p>
+                            <div class="w-16 h-0.5 bg-accent-yellow mx-auto my-4"></div>
+                        </div>
+                        
+                        <div class="modern-scrollbar text-[11px] leading-relaxed space-y-4 font-semibold text-slate-200 overflow-y-auto max-h-[320px] pr-2 text-justify">
+                            <p>
+                                A distinguished academic leader with over 20+ years of teaching, research, and administrative experience in Computer Science and Information Technology. Currently serving as <strong>Dean Academics at Lloyd Institute of Engineering & Technology</strong> and prior to this served as Dean, SCSIT at NIET.
+                            </p>
+                            <p>
+                                Holds a <strong>Post Doctorate in Artificial Intelligence, Machine Learning & 6G</strong> from Aarhus University, Denmark, and a <strong>Ph.D. in Computer Science</strong> from Dr. B.R. Ambedkar University, Agra. Published <strong>50+ research papers</strong> in SCI, Scopus, and peer-reviewed journals, authored 4 book chapters, and filed <strong>18 patents</strong> (with one granted). Also led government-sponsored research projects, including collaborations with <strong>IIT Roorkee</strong>.
+                            </p>
+                            <p>
+                                Has been instrumental in establishing new departments such as AI, IoT, and Cloud Computing, along with <strong>Centres of Excellence in Blockchain and Metaverse</strong> at NIET. Played a pivotal role in NBA and NAAC accreditations, curriculum design as BoS Convener internal as well as for other Universities, and international collaborations through AICTE-approved twinning programs and MoUs with global universities.
+                            </p>
+                            <p>
+                                Expertise spans AI & ML, AR/VR, IoT, HPC, wireless communications, and emerging technologies, and is a recognized <strong>HPC Master Trainer by AICTE</strong>. Delivered numerous guest lectures, FDPs, and workshops and served as keynote speaker, session chair, reviewer, and technical committee member in reputed national and international conferences.
+                            </p>
+                            <p>
+                                Received multiple accolades including <strong>Star Performer Awards (2020, 2023 & 2025)</strong>, Special Recognition for Industry–Academia Collaboration (2022), and Best Research Paper Award at ICCIN 2020. Active member of <strong>IEEE, CSI, and S4DS</strong>.
+                            </p>
+                            <p>
+                                With a strong focus on industry–academia integration, has led collaborations with <strong>AWS, Capgemini, Google Cloud Program, NTT Data, Wipro, LTiMindtree, and DLT Labs</strong>, ensuring students receive cutting-edge training aligned with global industry standards.
+                            </p>
+                        </div>
+                        
+                        <div class="pt-3 border-t border-slate-800 w-full flex items-center justify-center gap-1.5 text-[9px] font-black text-slate-500  tracking-widest">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                            <span>Hover away to exit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -620,7 +685,7 @@
                 <p class="pt-4 border-t border-gray-50 dark:border-slate-800 text-blue-600 font-bold  text-[10px]">Manuscript Requirements</p>
                 <p>• <strong>Paper length:</strong> 3000–6000 words</p>
                 <p>• <strong>Format:</strong> APA style (latest edition)</p>
-                <p>• <strong>Font:</strong> Times New Roman, Size 12, 1.5 spacing</p>
+                <p>• <strong>Font:</strong> Calibri, Size 12, 1.5 spacing</p>
             </div>
         </div>
         <div class="space-y-4">
