@@ -22,7 +22,7 @@
             <span class="mx-12 text-white/20">|</span>
             <span>Notification of Acceptance: <strike style="color: red; font-size: .9em;">30<sup>th</sup> May 2026</strike> 7<sup>th</sup> June 2026</span>
             <span class="mx-12 text-white/20">|</span>
-            <span>Full Paper Submission Deadline: <strike style="color: red; font-size: .9em;">10<sup>th</sup> June 2026</strike> 15<sup>th</sup> June 2026</span>
+            <span>Full Paper Submission Deadline: <strike style="color: red; font-size: .9em;">10<sup>th</sup> June 2026</strike> <strike style="color: red; font-size: .9em;">15<sup>th</sup> June 2026</strike> 20<sup>th</sup> June 2026</span>
             <span class="mx-12 text-white/20">|</span>
             <span>Registration Deadline: 15<sup>th</sup> June 2026</span>
             <span class="mx-12 text-white/20">|</span>
@@ -33,7 +33,7 @@
             <span class="mx-12 text-white/20">|</span>
             <span>Notification of Acceptance: <strike style="color: red; font-size: .9em;">30<sup>th</sup> May 2026</strike> 7<sup>th</sup> June 2026</span>
             <span class="mx-12 text-white/20">|</span>
-            <span>Full Paper Submission Deadline: <strike style="color: red; font-size: .9em;">10<sup>th</sup> June 2026</strike> 15<sup>th</sup> June 2026</span>
+            <span>Full Paper Submission Deadline: <strike style="color: red; font-size: .9em;">10<sup>th</sup> June 2026</strike> <strike style="color: red; font-size: .9em;">15<sup>th</sup> June 2026</strike> 20<sup>th</sup> June 2026</span>
             <span class="mx-12 text-white/20">|</span>
             <span>Registration Deadline: 15<sup>th</sup> June 2026</span>
             <span class="mx-12 text-white/20">|</span>
