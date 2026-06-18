@@ -247,7 +247,7 @@
             <div class="w-20 h-1.5 bg-accent-yellow mx-auto mt-2"></div>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 justify-items-center justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center justify-center">
             
             <!-- Speaker 1: Dr. Manoj Sharma -->
             <div class="flip-card group mx-auto">
@@ -482,6 +482,63 @@
                         </div>
                         
                         <div class="pt-3 border-t border-slate-800 w-full flex items-center justify-center gap-1.5 text-[9px] font-black text-slate-500  tracking-widest">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                            <span>Hover away to exit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speaker 5: Dr. Ankit Vidyarthi -->
+            <div class="flip-card group mx-auto">
+                <div class="flip-card-inner">
+                    <!-- Front Face -->
+                    <div class="flip-card-front shadow-2xl">
+                        <!-- Portrait Image -->
+                        <div class="relative w-60 h-72 max-w-full mx-auto overflow-hidden rounded-2xl shadow-lg border-2 border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-850">
+                            <img src="{{ asset('assets/images/speaker/Dr. Ankit Vidyarthi.png') }}" alt="Dr. Ankit Vidyarthi" class="w-full h-full object-cover object-top transition-transform duration-75">
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary-blue/30 via-transparent to-transparent opacity-60"></div>
+                        </div>
+
+                        <!-- Details -->
+                        <div class="text-center space-y-2 py-4">
+                            <h3 class="text-xl font-black text-primary-blue dark:text-white leading-tight">Dr. Ankit Vidyarthi</h3>
+                            <p class="text-gray-500 dark:text-gray-400 text-[10px] font-black tracking-[0.15em]">Associate Professor, JIIT Noida</p>
+                            <div class="h-0.5 w-12 bg-accent-yellow mx-auto my-2"></div>
+                            
+                            <div class="flex items-center justify-center gap-2 mb-2">
+                                <span class="px-2.5 py-0.5 bg-accent-yellow/20 text-primary-blue dark:text-accent-yellow text-[8px] font-black tracking-wider rounded border border-accent-yellow/30 shadow-sm">Keynote Address</span>
+                                <span class="px-2.5 py-0.5 bg-blue-600/10 text-blue-600 dark:text-blue-400 text-[8px] font-black tracking-wider rounded border border-blue-600/20 shadow-sm">Machine Learning</span>
+                            </div>
+
+                            <div class="flex items-center justify-center gap-1.5 text-blue-600 dark:text-accent-yellow text-[10px] font-black tracking-widest animate-pulse pt-2">
+                                <span>Hover to see Bio</span>
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Back Face -->
+                    <div class="flip-card-back shadow-2xl">
+                        <div>
+                            <h3 class="text-accent-yellow font-black text-base tracking-[0.15em] text-center">Dr. Ankit Vidyarthi</h3>
+                            <p class="text-slate-400 text-[9px] font-black tracking-[0.2em] text-center mt-1">Associate Professor, JIIT Noida</p>
+                            <div class="w-16 h-0.5 bg-accent-yellow mx-auto my-4"></div>
+                        </div>
+                        
+                        <div class="modern-scrollbar text-[11px] leading-relaxed space-y-4 font-semibold text-slate-200 overflow-y-auto max-h-[320px] pr-2 text-justify">
+                            <p>
+                                <strong>Dr. Ankit Vidyarthi</strong> is an Associate Professor in the Department of Computer Science Engineering & Information Technology, <strong>Jaypee Institute of Information Technology (JIIT) Noida</strong>. He joined the institute in June 2018 and is actively involved in academics and university-level research.
+                            </p>
+                            <p>
+                                He completed his <strong>Postdoc (Machine Learning)</strong> from Bennett University in 2018 and obtained his <strong>Ph.D.</strong> from the Department of CSE, <strong>Malaviya National Institute of Technology (MNIT) Jaipur</strong> in 2017. He is a professional member of <strong>ACM</strong> and <strong>SIGACT</strong>.
+                            </p>
+                            <p>
+                                He has published several papers in reputed <strong>SCI/(E) indexed journals</strong> and 20 research articles in peer-reviewed IEEE/Springer/ACM/Elsevier conferences indexed in Scopus. He serves as an associate Editor-in-Chief for JIEEE, Senior Editor with AI Foundation Trust India, Editor of Book Series in IET, and Associate Editor/GE for prestigious journals including <strong>IEEE Transactions on Industrial Informatics</strong>, Springer Interdisciplinary Sciences, Frontiers in Genetics, IEEE JSTAR, ACM TALIP, and <strong>IEEE Transactions on Consumer Electronics</strong>.
+                            </p>
+                        </div>
+                        
+                        <div class="pt-3 border-t border-slate-800 w-full flex items-center justify-center gap-1.5 text-[9px] font-black text-slate-500 tracking-widest">
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
                             <span>Hover away to exit</span>
                         </div>
