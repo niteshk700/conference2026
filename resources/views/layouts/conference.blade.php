@@ -89,10 +89,7 @@
             <div class="flex flex-col items-center lg:items-end gap-6">
                 <div class="flex gap-4 md:gap-6 items-center">
                     <div class="text-center group">
-                        <img src="{{ asset('assets/images/logo/csi.png') }}" alt="CSI Logo" class="h-14 md:h-24 object-contain transition-transform group-hover:scale-105 duration-300">
-                    </div>
-                    <div class="text-center group">
-                        <img src="{{ asset('assets/images/logo/a2z.png') }}" alt="A2Z Logo" class="h-14 md:h-24 object-contain transition-transform group-hover:scale-105 duration-300">
+                        <img src="{{ asset('assets/images/Association Logos.jpeg') }}" alt="Association Logos" class="h-14 md:h-24 object-contain transition-transform group-hover:scale-105 duration-300">
                     </div>
                 </div>
 
@@ -333,7 +330,7 @@
           <button class="popup-close dark:bg-slate-800 dark:text-white dark:hover:bg-red-600" id="popupClose" aria-label="Close modal">&times;</button>
           
           <div class="overflow-hidden rounded-2xl mb-4">
-              <img src="https://nitra.ac.in/wp-content/uploads/2026/05/conference2026.jpeg" alt="Conference Announcement" class="w-full object-cover">
+              <img src="{{ asset('assets/images/popup.jpeg') }}" alt="Conference Announcement" class="w-full object-cover">
           </div>
 
           <div class="text-center px-2 py-1">
